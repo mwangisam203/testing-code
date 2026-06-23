@@ -27,6 +27,6 @@ while True:
     except ValueError:
         print("Enter a valid choice(numbers only !!)") # handle non-numeric input
 
-square_root = math.sqrt(user_input) # calculate square root
+square_root = math.sqrt(user_input) 
 
 print(f"the root of {user_input} is {square_root}")
