@@ -22,3 +22,7 @@ def study():
 
 # Step 5: `study` now refers to wrapper, so all three lines are printed.
 study()
+
+# Decorator thinking:
+# Use a decorator when you want to add the same extra behavior around many
+# functions, like logging, timing, checking permission, or printing status.
