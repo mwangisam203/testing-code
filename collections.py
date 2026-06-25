@@ -15,6 +15,16 @@ for score in student["scores"]:
 average = total / len(student["scores"])
 print(f"{student['name']}'s average is {average:.1f}")
 
+# Updating collections:
+# Lists are useful when the number of items can grow over time.
+student["scores"].append(100)
+new_average = sum(student["scores"]) / len(student["scores"])
+print(f"After one more test: {new_average:.1f}")
+
+# Dictionaries can also grow by adding a new key.
+student["grade"] = "A"
+print(f"{student['name']} currently has grade {student['grade']}.")
+
 # A list stores ordered items. A dictionary labels values with keys.
 # Use a dictionary when names make the data easier to understand:
 # `student["scores"]` is clearer than remembering that scores are item 1.
