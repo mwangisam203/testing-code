@@ -17,6 +17,17 @@ def add_tax(price):
 
 print(f"Total: ${add_tax(20):.2f}")
 
+
+def add_custom_tax(price, rate):
+    # This version is more flexible because it does not depend on the global
+    # `tax_rate`. The caller chooses the rate each time.
+    return price * (1 + rate)
+
+
+print(f"Custom total: ${add_custom_tax(20, 0.08):.2f}")
+
 # `tax_rate` is global. `price` and `total` exist only inside the function.
 # If a function changes too many global variables, it becomes harder to trust.
 # Prefer passing data in and returning data out.
+# This habit makes functions easier to test because the answer depends only on
+# the arguments you pass in.
