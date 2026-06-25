@@ -23,3 +23,14 @@ left = "tea"
 right = "coffee"
 left, right = right, left
 print(f"After swap: left={left}, right={right}")
+
+students = [("Maya", 95), ("Leo", 88), ("Ari", 91)]
+
+# Unpacking in a loop:
+# Each item is a tuple with two values, so the loop can unpack them directly.
+for student_name, score in students:
+    print(f"{student_name} scored {score}")
+
+# This is cleaner than writing:
+# for student in students:
+#     print(student[0], student[1])
