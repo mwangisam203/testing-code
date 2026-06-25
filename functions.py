@@ -2,8 +2,14 @@
 
 
 def calculate_total(price, quantity, discount=0):
+    # Function thinking:
+    # 1. Put repeatable logic behind a clear name.
+    # 2. Use parameters for the values that may change.
+    # 3. Return the answer instead of locking the function to one print style.
     subtotal = price * quantity
-    return subtotal * (1 - discount)
+    discount_amount = subtotal * discount
+    final_total = subtotal - discount_amount
+    return final_total
 
 
 # The arguments are copied into the function's parameters.
@@ -11,3 +17,5 @@ total = calculate_total(12.50, 3, discount=0.10)
 print(f"Total after discount: ${total:.2f}")
 
 # `return` sends a value back; `print` only displays a value.
+# If you can describe a chunk of code with a useful verb phrase,
+# it may be a good candidate for a function.
