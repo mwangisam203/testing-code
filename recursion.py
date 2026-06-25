@@ -2,11 +2,22 @@
 
 
 def factorial(number):
+    # Recursion thinking:
+    # 1. Find the smallest version of the problem.
+    #    1! and 0! are both 1, so we can stop there.
     if number <= 1:
         return 1
+
+    # 2. Shrink the problem toward the base case.
+    #    factorial(5) becomes 5 * factorial(4).
+    #    factorial(4) becomes 4 * factorial(3), and so on.
     return number * factorial(number - 1)
 
 
 print(f"5 factorial is {factorial(5)}")
 
 # The base case stops the calls. Without it, recursion never finishes.
+# When stuck on recursion, ask:
+# - What is the stopping point?
+# - How does each call get closer to that point?
+# - What value is returned when the calls unwind?
