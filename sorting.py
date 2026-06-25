@@ -13,3 +13,7 @@ ranked_students = sorted(students, key=lambda student: student[1], reverse=True)
 # Step 5: unpack and print each tuple from the newly ordered list.
 for name, score in ranked_students:
     print(f"{name}: {score}")
+
+# Sorting thinking:
+# First decide what "best" or "first" means.
+# Here, "best" means the highest score, so the key must return the score.
