@@ -37,6 +37,20 @@ class BankAccount:
         self.balance -= amount
         return True
 
+    def transfer_to(self, other_account, amount):
+        # Transfer thinking:
+        # A transfer is really two actions that must happen in the right order:
+        # 1. Try to withdraw money from this account.
+        # 2. If that worked, deposit the same amount into the other account.
+        #
+        # We reuse `withdraw` and `deposit` instead of rewriting the same
+        # validation rules here. Reusing your own methods keeps bugs smaller.
+        if self.withdraw(amount):
+            other_account.deposit(amount)
+            return True
+
+        return False
+
     def show_balance(self):
         # This method does not change data; it only displays current state.
         print(f"{self.owner} has ${self.balance:.2f}")
@@ -49,6 +63,15 @@ if account.withdraw(30):
     print("Withdrawal worked.")
 account.show_balance()
 
+savings = BankAccount("Savings", 200)
+checking = BankAccount("Checking", 25)
+
+if savings.transfer_to(checking, 75):
+    print("Transfer worked.")
+
+savings.show_balance()
+checking.show_balance()
+
 # The class is the blueprint; `account` is one object made from it.
 # Good class design usually asks:
 # 1. What data does this object remember?
@@ -56,3 +79,5 @@ account.show_balance()
 # 3. What bad inputs should be blocked?
 # Returning True/False from a method is useful when the caller needs to know
 # whether the action succeeded.
+# Objects become more useful when they can work together, like one account
+# transferring money into another account.
