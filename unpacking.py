@@ -34,3 +34,20 @@ for student_name, score in students:
 # This is cleaner than writing:
 # for student in students:
 #     print(student[0], student[1])
+
+defaults = {"theme": "light", "notifications": True}
+overrides = {"theme": "dark"}
+
+# Dictionary unpacking:
+# `**defaults` copies the key/value pairs into a new dictionary.
+# If the same key appears later, the later value wins.
+settings = {**defaults, **overrides}
+print(settings)
+
+
+def create_user(name, role="member", active=True):
+    print(f"{name} is an active {role}: {active}")
+
+
+user_data = {"name": "Sam", "role": "admin"}
+create_user(**user_data)
