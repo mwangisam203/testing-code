@@ -26,6 +26,18 @@ print(f"{loaded_profile['name']} is learning:")
 for skill in loaded_profile["skills"]:
     print(f"- {skill}")
 
+# Updating JSON thinking:
+# Loading JSON gives us normal Python data again, so we can change it like any
+# other dictionary or list.
+loaded_profile["skills"].append("json")
+loaded_profile["last_topic"] = "saving data"
+
+with open(filename, "w", encoding="utf-8") as file:
+    json.dump(loaded_profile, file, indent=2)
+
+print("Updated profile saved.")
+
 # JSON supports simple data types:
 # strings, numbers, booleans, None, lists, and dictionaries.
 # It does not automatically save custom class objects unless you convert them.
+# The common cycle is: load data, change it in Python, then save it again.
