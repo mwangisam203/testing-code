@@ -30,6 +30,23 @@ def count_down(number):
 
 count_down(3)
 
+
+def recursive_sum(numbers):
+    # Recursive list thinking:
+    # The smallest list is an empty list. Its sum is 0.
+    if len(numbers) == 0:
+        return 0
+
+    # Split the problem into:
+    # - the first number
+    # - the sum of the rest of the list
+    first = numbers[0]
+    rest = numbers[1:]
+    return first + recursive_sum(rest)
+
+
+print(f"Recursive sum: {recursive_sum([2, 4, 6])}")
+
 # The base case stops the calls. Without it, recursion never finishes.
 # When stuck on recursion, ask:
 # - What is the stopping point?
@@ -37,3 +54,5 @@ count_down(3)
 # - What value is returned when the calls unwind?
 # Recursion is not always the easiest answer. If a normal loop is clearer,
 # use the loop. Clarity beats cleverness.
+# Recursive list problems often ask: what do I do with the first item, and
+# how do I solve the rest?
