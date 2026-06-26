@@ -23,6 +23,29 @@ def study():
 # Step 5: `study` now refers to wrapper, so all three lines are printed.
 study()
 
+
+def trace(function):
+    # Deeper decorator thinking:
+    # Real functions often have parameters, so a useful wrapper should accept
+    # any positional arguments (`*args`) and keyword arguments (`**kwargs`).
+    def wrapper(*args, **kwargs):
+        print(f"Calling {function.__name__}...")
+        result = function(*args, **kwargs)
+        print(f"{function.__name__} returned {result!r}")
+        return result
+
+    return wrapper
+
+
+@trace
+def add_numbers(first, second):
+    return first + second
+
+
+sum_result = add_numbers(3, 4)
+print(f"Final sum: {sum_result}")
+
 # Decorator thinking:
 # Use a decorator when you want to add the same extra behavior around many
 # functions, like logging, timing, checking permission, or printing status.
+# `*args` and `**kwargs` let the decorator work with many function shapes.
