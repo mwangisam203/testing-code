@@ -26,8 +26,27 @@ def add_custom_tax(price, rate):
 
 print(f"Custom total: ${add_custom_tax(20, 0.08):.2f}")
 
+
+def make_multiplier(multiplier):
+    # Closure thinking:
+    # The inner function "remembers" the multiplier even after the outer
+    # function has finished running.
+    def multiply(number):
+        return number * multiplier
+
+    return multiply
+
+
+double = make_multiplier(2)
+triple = make_multiplier(3)
+
+print(f"Double 5: {double(5)}")
+print(f"Triple 5: {triple(5)}")
+
 # `tax_rate` is global. `price` and `total` exist only inside the function.
 # If a function changes too many global variables, it becomes harder to trust.
 # Prefer passing data in and returning data out.
 # This habit makes functions easier to test because the answer depends only on
 # the arguments you pass in.
+# Closures are one reason decorators work: a returned function can remember
+# values from the function that created it.
