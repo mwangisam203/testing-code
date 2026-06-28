@@ -46,6 +46,21 @@ def can_enter_event(age, has_ticket):
 print(can_enter_event(20, True))
 print(can_enter_event(16, True))
 
+
+def shipping_cost(order_total):
+    # Example 2: conditionals often encode business rules.
+    # Put the most generous/specific rule first so it wins immediately.
+    if order_total >= 100:
+        return 0
+
+    if order_total >= 50:
+        return 5
+
+    return 10
+
+
+print(f"Shipping: ${shipping_cost(72)}")
+
 # Python stops at the first condition that is True.
 # A useful pattern is:
 # 1. Handle the strongest case.
