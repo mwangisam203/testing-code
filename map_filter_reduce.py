@@ -34,6 +34,16 @@ print(prices_with_tax_clear)
 print(expensive_prices_clear)
 print(total_clear)
 
+
+# Example 3: reduce can also keep the "best so far".
+# Here the running value is the highest price we have seen.
+highest_price = reduce(
+    lambda highest, price: price if price > highest else highest,
+    prices,
+    prices[0],
+)
+print(f"Highest price: {highest_price}")
+
 # Python often has clearer alternatives:
 # - list comprehensions instead of map/filter
 # - sum(prices) instead of reduce for adding
