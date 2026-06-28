@@ -25,3 +25,15 @@ email = "  MAYA@Example.COM "
 # This avoids treating "MAYA@Example.COM" and "maya@example.com" as different.
 clean_email = email.strip().lower()
 print(f"Clean email: {clean_email}")
+
+
+sentence = "Python is fun because Python is readable"
+
+# Example 3: replace text and join pieces back together.
+# `replace` is useful for simple substitutions.
+# `join` is useful when you already have a list of string pieces.
+updated_sentence = sentence.replace("fun", "powerful")
+slug = "-".join(updated_sentence.lower().split())
+
+print(updated_sentence)
+print(f"Slug: {slug}")
