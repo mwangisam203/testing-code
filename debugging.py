@@ -26,6 +26,16 @@ print(f"Cart total: ${total:.2f}")
 assert total > 0, "Cart total should be positive."
 print("DEBUG: cart total passed the positive check")
 
+
+# Example 3: use checkpoints to narrow down where a bug lives.
+# If "checkpoint 1" prints but "checkpoint 2" does not, the problem is between
+# those two lines.
+print("DEBUG checkpoint 1: before discount")
+discount = 0.10
+total_after_discount = total * (1 - discount)
+print("DEBUG checkpoint 2: after discount")
+print(f"Discounted total: ${total_after_discount:.2f}")
+
 # A simple debugging routine:
 # 1. What did I expect?
 # 2. What actually happened?
