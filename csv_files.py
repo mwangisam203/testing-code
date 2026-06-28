@@ -60,6 +60,19 @@ for student in loaded_students:
 
 print(f"Honor roll: {honor_roll}")
 
+
+# Example 3: group CSV-style rows into buckets.
+# Here we group names by pass/fail status.
+students_by_status = {"pass": [], "needs practice": []}
+
+for student in loaded_students:
+    if student["score"] >= 70:
+        students_by_status["pass"].append(student["name"])
+    else:
+        students_by_status["needs practice"].append(student["name"])
+
+print(students_by_status)
+
 # CSV habit:
 # Use dictionaries when column names matter.
 # Convert text values back into numbers before doing math.
