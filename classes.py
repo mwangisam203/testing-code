@@ -55,6 +55,11 @@ class BankAccount:
         # This method does not change data; it only displays current state.
         print(f"{self.owner} has ${self.balance:.2f}")
 
+    def get_balance(self):
+        # Example 2: return data when another part of the program needs it.
+        # Printing is for people; returning is for code.
+        return self.balance
+
 
 account = BankAccount("Alex", 50)
 account.deposit(25)
@@ -71,6 +76,7 @@ if savings.transfer_to(checking, 75):
 
 savings.show_balance()
 checking.show_balance()
+print(f"Checking balance as a value: {checking.get_balance()}")
 
 # The class is the blueprint; `account` is one object made from it.
 # Good class design usually asks:
