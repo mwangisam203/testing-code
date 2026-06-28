@@ -19,11 +19,19 @@ def is_passing(score, passing_score=70):
     return score >= passing_score
 
 
+def describe_purchase(price, quantity, discount=0):
+    # Example 2: one function can call another function.
+    # This keeps the math in `calculate_total` and the message-building here.
+    total = calculate_total(price, quantity, discount)
+    return f"{quantity} item(s) cost ${total:.2f}"
+
+
 # The arguments are copied into the function's parameters.
 total = calculate_total(12.50, 3, discount=0.10)
 print(f"Total after discount: ${total:.2f}")
 print(f"Score passes? {is_passing(82)}")
 print(f"Harder class passes? {is_passing(82, passing_score=85)}")
+print(describe_purchase(8, 2, discount=0.25))
 
 # `return` sends a value back; `print` only displays a value.
 # If you can describe a chunk of code with a useful verb phrase,
