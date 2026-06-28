@@ -13,9 +13,21 @@ def explain_square_root_rule(value):
     return "This number can be square-rooted."
 
 
+def convert_to_float(raw_value):
+    # Example 3: conversion helpers make risky parsing easier to isolate.
+    # Return None when conversion fails so the caller can decide what to print.
+    try:
+        return float(raw_value)
+    except ValueError:
+        return None
+
+
 while True:
     try:
-        number = float(input("Enter a number that is 0 or greater: "))
+        number = convert_to_float(input("Enter a number that is 0 or greater: "))
+
+        if number is None:
+            raise ValueError
 
         if number < 0:
             print(explain_square_root_rule(number))
