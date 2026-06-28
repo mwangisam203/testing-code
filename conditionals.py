@@ -61,6 +61,24 @@ def shipping_cost(order_total):
 
 print(f"Shipping: ${shipping_cost(72)}")
 
+
+def letter_grade(score):
+    # Example 3: grade boundaries are another place where order matters.
+    # Check from highest to lowest so each score lands in the right bucket.
+    if score >= 90:
+        return "A"
+    if score >= 80:
+        return "B"
+    if score >= 70:
+        return "C"
+    if score >= 60:
+        return "D"
+
+    return "F"
+
+
+print(f"Grade: {letter_grade(87)}")
+
 # Python stops at the first condition that is True.
 # A useful pattern is:
 # 1. Handle the strongest case.
