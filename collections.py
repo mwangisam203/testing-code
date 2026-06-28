@@ -25,6 +25,20 @@ print(f"After one more test: {new_average:.1f}")
 student["grade"] = "A"
 print(f"{student['name']} currently has grade {student['grade']}.")
 
+
+# Example 2: count how often values appear.
+# A dictionary is useful when each key needs its own running total.
+colors = ["blue", "red", "blue", "green", "red", "blue"]
+color_counts = {}
+
+for color in colors:
+    if color not in color_counts:
+        color_counts[color] = 0
+
+    color_counts[color] += 1
+
+print(color_counts)
+
 # A list stores ordered items. A dictionary labels values with keys.
 # Use a dictionary when names make the data easier to understand:
 # `student["scores"]` is clearer than remembering that scores are item 1.
