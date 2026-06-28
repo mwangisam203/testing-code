@@ -60,6 +60,11 @@ class BankAccount:
         # Printing is for people; returning is for code.
         return self.balance
 
+    def summary(self):
+        # Example 3: methods can return formatted text too.
+        # This keeps display wording close to the object that owns the data.
+        return f"Account(owner={self.owner}, balance=${self.balance:.2f})"
+
 
 account = BankAccount("Alex", 50)
 account.deposit(25)
@@ -77,6 +82,7 @@ if savings.transfer_to(checking, 75):
 savings.show_balance()
 checking.show_balance()
 print(f"Checking balance as a value: {checking.get_balance()}")
+print(checking.summary())
 
 # The class is the blueprint; `account` is one object made from it.
 # Good class design usually asks:
