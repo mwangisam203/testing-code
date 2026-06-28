@@ -25,6 +25,21 @@ for student in students:
 
     print(f"{name}'s average is {average:.1f}")
 
+
+# Example 2: find the strongest subject for each student.
+# When nested data has named values, loop through `.items()` so you get both
+# the subject name and the score together.
+for student in students:
+    best_subject = None
+    best_score = 0
+
+    for subject, score in student["scores"].items():
+        if score > best_score:
+            best_subject = subject
+            best_score = score
+
+    print(f"{student['name']}'s best subject is {best_subject}.")
+
 # How to read nested access:
 # student["scores"]["math"]
 # means:
