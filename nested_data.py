@@ -40,6 +40,17 @@ for student in students:
 
     print(f"{student['name']}'s best subject is {best_subject}.")
 
+
+# Example 3: safely read optional nested data with `.get()`.
+# Some real data is incomplete, so `.get()` lets us provide a default instead
+# of crashing with a KeyError.
+students[0]["contact"] = {"email": "maya@example.com"}
+
+for student in students:
+    contact = student.get("contact", {})
+    email = contact.get("email", "no email listed")
+    print(f"{student['name']} email: {email}")
+
 # How to read nested access:
 # student["scores"]["math"]
 # means:
