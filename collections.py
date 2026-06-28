@@ -39,6 +39,18 @@ for color in colors:
 
 print(color_counts)
 
+
+# Example 3: remove items without editing a list while looping over it.
+# Build a new list with only the values you want to keep.
+raw_tasks = ["study", "", "practice", "", "review"]
+clean_tasks = []
+
+for task in raw_tasks:
+    if task != "":
+        clean_tasks.append(task)
+
+print(clean_tasks)
+
 # A list stores ordered items. A dictionary labels values with keys.
 # Use a dictionary when names make the data easier to understand:
 # `student["scores"]` is clearer than remembering that scores are item 1.
