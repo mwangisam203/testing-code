@@ -20,6 +20,12 @@ for product in cart:
 
 print(f"Cart total: ${total:.2f}")
 
+
+# Example 2: check assumptions before continuing.
+# If this condition fails, Python stops right here with a helpful clue.
+assert total > 0, "Cart total should be positive."
+print("DEBUG: cart total passed the positive check")
+
 # A simple debugging routine:
 # 1. What did I expect?
 # 2. What actually happened?
