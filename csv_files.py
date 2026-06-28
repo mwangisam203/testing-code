@@ -49,6 +49,17 @@ average_score = total_score / len(loaded_students)
 print(f"Average score: {average_score:.1f}")
 print(f"Highest score: {highest_student['name']} with {highest_student['score']}")
 
+
+# Example 2: filter CSV data after reading it.
+# Once rows are converted into dictionaries, filtering works like any list of
+# dictionaries in Python.
+honor_roll = []
+for student in loaded_students:
+    if student["score"] >= 90:
+        honor_roll.append(student["name"])
+
+print(f"Honor roll: {honor_roll}")
+
 # CSV habit:
 # Use dictionaries when column names matter.
 # Convert text values back into numbers before doing math.
