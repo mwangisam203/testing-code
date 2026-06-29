@@ -33,5 +33,10 @@ if mode == "loud":
 else:
     print("Python is fun.")
 
+
+if "--repeat" in sys.argv:
+    # Tip: command-line flags can turn features on or off.
+    print(f"Repeating hello: Hello again, {name}!")
+
 # Bigger projects often use `argparse`, but `sys.argv` is the simple starting
 # point for understanding how terminal input reaches your script.
