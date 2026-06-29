@@ -37,6 +37,12 @@ with open(filename, "w", encoding="utf-8") as file:
 
 print("Updated profile saved.")
 
+
+required_keys = ["name", "skills", "is_learning"]
+for key in required_keys:
+    if key not in loaded_profile:
+        print(f"Missing key: {key}")
+
 # JSON supports simple data types:
 # strings, numbers, booleans, None, lists, and dictionaries.
 # It does not automatically save custom class objects unless you convert them.
