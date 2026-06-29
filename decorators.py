@@ -45,6 +45,11 @@ def add_numbers(first, second):
 sum_result = add_numbers(3, 4)
 print(f"Final sum: {sum_result}")
 
+
+print(f"Wrapped function name: {add_numbers.__name__}")
+# Tip: simple decorators can hide the original function name.
+# Later, `functools.wraps` fixes that for production-quality decorators.
+
 # Decorator thinking:
 # Use a decorator when you want to add the same extra behavior around many
 # functions, like logging, timing, checking permission, or printing status.
