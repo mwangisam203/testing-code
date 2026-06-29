@@ -24,6 +24,11 @@ students = ["maya", "leo", "ari"]
 name_lookup = {name: name.title() for name in students}
 print(name_lookup)
 
+
+# Set comprehensions keep only unique results.
+first_letters = {name[0] for name in students}
+print(first_letters)
+
 # Good taste rule:
 # Use comprehensions when they stay readable.
 # If the line gets too clever, write a normal loop.
