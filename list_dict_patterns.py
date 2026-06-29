@@ -45,5 +45,10 @@ for product in products:
 
 print(products_by_category)
 
+
+# Tip: `any` answers "Does at least one item match?"
+has_expensive_product = any(product["price"] > 30 for product in products)
+print(f"Any expensive product? {has_expensive_product}")
+
 # This list-of-dictionaries shape appears constantly in real Python:
 # API results, database rows, CSV files, reports, and user records.
