@@ -43,6 +43,22 @@ triple = make_multiplier(3)
 print(f"Double 5: {double(5)}")
 print(f"Triple 5: {triple(5)}")
 
+
+def make_counter():
+    count = 0
+
+    def increment():
+        nonlocal count
+        count += 1
+        return count
+
+    return increment
+
+
+counter = make_counter()
+print(counter())
+print(counter())
+
 # `tax_rate` is global. `price` and `total` exist only inside the function.
 # If a function changes too many global variables, it becomes harder to trust.
 # Prefer passing data in and returning data out.
@@ -50,3 +66,4 @@ print(f"Triple 5: {triple(5)}")
 # the arguments you pass in.
 # Closures are one reason decorators work: a returned function can remember
 # values from the function that created it.
+# `nonlocal` lets an inner function update a variable from the outer function.
