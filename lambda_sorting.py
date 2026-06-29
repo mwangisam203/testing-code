@@ -28,5 +28,16 @@ print("Tasks by priority, then time:")
 for task in by_priority_then_time:
     print(f"- {task['title']} ({task['minutes']} minutes)")
 
+
+def task_duration(task):
+    # Tip: use a named function instead of lambda when the rule deserves a name.
+    return task["minutes"]
+
+
+shortest_first = sorted(tasks, key=task_duration)
+print("Shortest tasks first:")
+for task in shortest_first:
+    print(f"- {task['title']}")
+
 # Lambda is not better than `def`; it is just shorter.
 # If the logic needs comments, use a normal named function.
