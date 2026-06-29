@@ -29,6 +29,17 @@ def test_discount_math():
 test_discount_math()
 print("All basic tests passed.")
 
+
+def test_names_are_cleaned():
+    raw_name = "  maya  "
+    cleaned_name = raw_name.strip().title()
+
+    assert cleaned_name == "Maya"
+
+
+test_names_are_cleaned()
+print("String cleaning test passed.")
+
 # Testing habit:
 # 1. Pick a simple input.
 # 2. Decide the expected output by hand.
