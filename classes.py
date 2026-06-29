@@ -2,6 +2,8 @@
 
 
 class BankAccount:
+    minimum_balance = 0
+
     def __init__(self, owner, balance=0):
         # Step 1: `__init__` runs when we create a new BankAccount.
         # Step 2: store the starting information on `self`, which means
@@ -83,6 +85,7 @@ savings.show_balance()
 checking.show_balance()
 print(f"Checking balance as a value: {checking.get_balance()}")
 print(checking.summary())
+print(f"Minimum balance rule: ${BankAccount.minimum_balance}")
 
 # The class is the blueprint; `account` is one object made from it.
 # Good class design usually asks:
@@ -93,3 +96,4 @@ print(checking.summary())
 # whether the action succeeded.
 # Objects become more useful when they can work together, like one account
 # transferring money into another account.
+# Class variables belong to the class itself and are shared by every object.
