@@ -51,6 +51,15 @@ for task in raw_tasks:
 
 print(clean_tasks)
 
+
+# Tip: `setdefault` can shorten "create the list if missing, then append".
+grouped_words = {}
+for word in ["ant", "apple", "bat"]:
+    first_letter = word[0]
+    grouped_words.setdefault(first_letter, []).append(word)
+
+print(grouped_words)
+
 # A list stores ordered items. A dictionary labels values with keys.
 # Use a dictionary when names make the data easier to understand:
 # `student["scores"]` is clearer than remembering that scores are item 1.
