@@ -34,6 +34,12 @@ else:
 finally:
     print("Finished division attempt.")
 
+
+try:
+    number = int("not a number")
+except ValueError:
+    print("Could not convert text to an integer.")
+
 # `raise` reports a problem; `except` decides how to handle it.
 # A good error message should explain what was wrong, not just that it failed.
 # Use `else` for success-only work. Use `finally` for cleanup work, such as
