@@ -25,6 +25,11 @@ with open(filename, "r", encoding="utf-8") as file:
         # `strip()` removes that extra whitespace for cleaner printing.
         print(f"Note: {line.strip()}")
 
+
+# Tip: append mode adds to the end instead of replacing the whole file.
+with open(filename, "a", encoding="utf-8") as file:
+    file.write("Appending keeps existing notes.\n")
+
 # File mode quick guide:
 # "r" reads an existing file.
 # "w" writes a new file or replaces an old one.
