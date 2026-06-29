@@ -51,6 +51,16 @@ for student in students:
     email = contact.get("email", "no email listed")
     print(f"{student['name']} email: {email}")
 
+
+# Extra example: flatten nested data into simple rows.
+# This is useful before saving to CSV or displaying a table.
+rows = []
+for student in students:
+    for subject, score in student["scores"].items():
+        rows.append({"name": student["name"], "subject": subject, "score": score})
+
+print(rows)
+
 # How to read nested access:
 # student["scores"]["math"]
 # means:
