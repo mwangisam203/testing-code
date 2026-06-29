@@ -17,3 +17,8 @@ for name, score in ranked_students:
 # Sorting thinking:
 # First decide what "best" or "first" means.
 # Here, "best" means the highest score, so the key must return the score.
+
+
+# Tip: `min` and `max` can use the same key idea as `sorted`.
+top_student = max(students, key=lambda student: student[1])
+print(f"Top student: {top_student[0]}")
