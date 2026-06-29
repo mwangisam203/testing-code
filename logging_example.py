@@ -26,6 +26,9 @@ share = divide(45, 3)
 if share is not None:
     print(f"Each person pays ${share:.2f}")
 
+
+logging.warning("This is a practice warning message.")
+
 # Logging thinking:
 # `print` is fine for learning and quick checks.
 # `logging` is better when you want a record of what happened.
