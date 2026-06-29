@@ -73,6 +73,19 @@ for student in loaded_students:
 
 print(students_by_status)
 
+
+def average_from_rows(rows):
+    # Tip: once CSV data is loaded, write normal helper functions around it.
+    total = 0
+
+    for row in rows:
+        total += row["score"]
+
+    return total / len(rows)
+
+
+print(f"Average from helper: {average_from_rows(loaded_students):.1f}")
+
 # CSV habit:
 # Use dictionaries when column names matter.
 # Convert text values back into numbers before doing math.
