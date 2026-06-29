@@ -51,3 +51,8 @@ def create_user(name, role="member", active=True):
 
 user_data = {"name": "Sam", "role": "admin"}
 create_user(**user_data)
+
+
+nested_person = ("Maya", ("Python", "CSV"))
+person_name, (first_skill, second_skill) = nested_person
+print(f"{person_name} knows {first_skill} and {second_skill}.")
