@@ -40,6 +40,14 @@ if discount is None:
 else:
     print(f"Discount: {discount:.0%}")
 
+
+def is_valid_username(username):
+    # Tip: validation rules should be easy to read and easy to change.
+    return username.isidentifier() and len(username) >= 3
+
+
+print(f"Username valid? {is_valid_username('maya_1')}")
+
 # Validation usually has two steps:
 # 1. Can this value be converted?
 # 2. Does this value make sense for this program?
