@@ -23,11 +23,17 @@ def greet_user(name: str, excited: bool = False) -> str:
     return greeting + "."
 
 
+def average(numbers: list[float]) -> float:
+    # Tip: type hints can describe containers too.
+    return sum(numbers) / len(numbers)
+
+
 room_area = calculate_area(12.5, 10)
 message = greet_user("Maya", excited=True)
 
 print(f"Room area: {room_area}")
 print(message)
+print(f"Average: {average([10, 20, 30])}")
 
 # Important habit:
 # Type hints answer, "What kind of value should go here?"
