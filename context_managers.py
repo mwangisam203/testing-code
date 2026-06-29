@@ -11,3 +11,7 @@ with open(__file__, encoding="utf-8") as file:
 # Step 5: leaving the block closes the file automatically, even if an error
 # occurs. The saved string remains available because it is a separate value.
 print(first_line)
+
+# Extra tip:
+# Context managers are best when something must be cleaned up afterwards:
+# files, network connections, locks, temporary resources, and database sessions.
