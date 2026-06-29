@@ -25,6 +25,12 @@ else:
 python_files = list(project_folder.glob("*.py"))
 print(f"Python files found: {len(python_files)}")
 
+
+# Tip: pathlib can read small text files directly.
+if notes_file.exists():
+    preview = notes_file.read_text(encoding="utf-8").splitlines()[0]
+    print(f"First note preview: {preview}")
+
 # Useful pathlib habits:
 # - Path("folder") / "file.txt" builds a path safely.
 # - `.exists()` checks if something is there.
