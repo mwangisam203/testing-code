@@ -32,6 +32,11 @@ def create_profile(name, *, role="student", active=True):
     return {"name": name, "role": role, "active": active}
 
 
+def add_all(*numbers):
+    # Tip: `*numbers` gathers any number of positional arguments into a tuple.
+    return sum(numbers)
+
+
 # The arguments are copied into the function's parameters.
 total = calculate_total(12.50, 3, discount=0.10)
 print(f"Total after discount: ${total:.2f}")
@@ -39,6 +44,7 @@ print(f"Score passes? {is_passing(82)}")
 print(f"Harder class passes? {is_passing(82, passing_score=85)}")
 print(describe_purchase(8, 2, discount=0.25))
 print(create_profile("Ari", role="mentor"))
+print(f"Add all: {add_all(1, 2, 3, 4)}")
 
 # `return` sends a value back; `print` only displays a value.
 # If you can describe a chunk of code with a useful verb phrase,
