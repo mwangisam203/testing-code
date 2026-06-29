@@ -22,6 +22,16 @@ student = Student("Maya", 92)
 print(student)
 print(f"Passing? {student.is_passing()}")
 
+
+@dataclass
+class Course:
+    title: str
+    students: list[str]
+
+
+course = Course("Python Basics", ["Maya", "Leo"])
+print(course)
+
 # Use a dataclass when:
 # - the class mostly holds named pieces of data
 # - you want cleaner setup code
