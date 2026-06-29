@@ -29,4 +29,9 @@ def is_overdue(due_date: date) -> bool:
 
 print(f"Is yesterday overdue? {is_overdue(today - timedelta(days=1))}")
 
+
+# Tip: `strftime` formats dates for people.
+friendly_today = today.strftime("%B %d, %Y")
+print(f"Friendly date: {friendly_today}")
+
 # Dates are useful for deadlines, logs, reports, reminders, and filtering data.
