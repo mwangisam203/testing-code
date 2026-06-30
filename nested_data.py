@@ -68,3 +68,6 @@ print(rows)
 # 2. From that dictionary, get the math score.
 #
 # Do not rush nested data. Read one layer at a time.
+
+math_scores = [student["scores"]["math"] for student in students]
+print(f"Math scores: {math_scores}")
