@@ -67,3 +67,6 @@ print(counter())
 # Closures are one reason decorators work: a returned function can remember
 # values from the function that created it.
 # `nonlocal` lets an inner function update a variable from the outer function.
+
+quadruple = make_multiplier(4)
+print(f"Quadruple 5: {quadruple(5)}")
