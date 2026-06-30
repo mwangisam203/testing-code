@@ -50,3 +50,9 @@ print(f"Add all: {add_all(1, 2, 3, 4)}")
 # If you can describe a chunk of code with a useful verb phrase,
 # it may be a good candidate for a function.
 # Tiny functions are not silly when they make the main program easier to read.
+
+def apply_discount(price, *, percent):
+    return price * (1 - percent)
+
+
+print(f"Discounted price: ${apply_discount(100, percent=0.15):.2f}")
