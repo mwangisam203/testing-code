@@ -40,3 +40,5 @@ if "--repeat" in sys.argv:
 
 # Bigger projects often use `argparse`, but `sys.argv` is the simple starting
 # point for understanding how terminal input reaches your script.
+
+print(f"Argument count: {len(sys.argv)}")
