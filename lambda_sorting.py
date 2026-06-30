@@ -41,3 +41,6 @@ for task in shortest_first:
 
 # Lambda is not better than `def`; it is just shorter.
 # If the logic needs comments, use a normal named function.
+
+long_tasks = [task for task in tasks if task["minutes"] >= 30]
+print(f"Long tasks: {[task['title'] for task in long_tasks]}")
