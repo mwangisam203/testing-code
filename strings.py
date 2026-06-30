@@ -37,3 +37,6 @@ slug = "-".join(updated_sentence.lower().split())
 
 print(updated_sentence)
 print(f"Slug: {slug}")
+
+initials = "".join(word[0].upper() for word in clean_message.split())
+print(f"Initials: {initials}")
