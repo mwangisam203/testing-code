@@ -36,3 +36,6 @@ print(course)
 # - the class mostly holds named pieces of data
 # - you want cleaner setup code
 # - you still want methods connected to that data
+
+course.students.append("Ari")
+print(f"Updated course: {course}")
