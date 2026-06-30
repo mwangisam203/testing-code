@@ -15,3 +15,6 @@ print(first_line)
 # Extra tip:
 # Context managers are best when something must be cleaned up afterwards:
 # files, network connections, locks, temporary resources, and database sessions.
+
+resource_name = "practice file"
+print(f"Managed resource: {resource_name}")
