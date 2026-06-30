@@ -38,3 +38,9 @@ print(f"Average: {average([10, 20, 30])}")
 # Important habit:
 # Type hints answer, "What kind of value should go here?"
 # They make bigger code easier to read before you even run it.
+
+def repeat_word(word: str, times: int) -> str:
+    return word * times
+
+
+print(repeat_word("ha", 3))
