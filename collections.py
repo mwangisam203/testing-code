@@ -63,3 +63,6 @@ print(grouped_words)
 # A list stores ordered items. A dictionary labels values with keys.
 # Use a dictionary when names make the data easier to understand:
 # `student["scores"]` is clearer than remembering that scores are item 1.
+
+unique_tasks = set(clean_tasks)
+print(f"Unique tasks: {unique_tasks}")
