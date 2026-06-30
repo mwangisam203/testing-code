@@ -22,3 +22,6 @@ for name, score in ranked_students:
 # Tip: `min` and `max` can use the same key idea as `sorted`.
 top_student = max(students, key=lambda student: student[1])
 print(f"Top student: {top_student[0]}")
+
+lowest_student = min(students, key=lambda student: student[1])
+print(f"Needs support: {lowest_student[0]}")
