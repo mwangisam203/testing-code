@@ -56,3 +56,5 @@ print(f"Recursive sum: {recursive_sum([2, 4, 6])}")
 # use the loop. Clarity beats cleverness.
 # Recursive list problems often ask: what do I do with the first item, and
 # how do I solve the rest?
+
+print(f"Empty recursive sum: {recursive_sum([])}")
