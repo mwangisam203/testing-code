@@ -34,3 +34,8 @@ with open(filename, "a", encoding="utf-8") as file:
 # "r" reads an existing file.
 # "w" writes a new file or replaces an old one.
 # "a" appends to the end of a file.
+
+with open(filename, "r", encoding="utf-8") as file:
+    line_count = len(file.readlines())
+
+print(f"Saved note lines: {line_count}")
