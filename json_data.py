@@ -47,3 +47,5 @@ for key in required_keys:
 # strings, numbers, booleans, None, lists, and dictionaries.
 # It does not automatically save custom class objects unless you convert them.
 # The common cycle is: load data, change it in Python, then save it again.
+
+print(f"Skill count: {len(loaded_profile['skills'])}")
