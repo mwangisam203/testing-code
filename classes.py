@@ -97,3 +97,6 @@ print(f"Minimum balance rule: ${BankAccount.minimum_balance}")
 # Objects become more useful when they can work together, like one account
 # transferring money into another account.
 # Class variables belong to the class itself and are shared by every object.
+
+accounts = [savings, checking]
+print(f"Total stored money: ${sum(account.get_balance() for account in accounts):.2f}")
