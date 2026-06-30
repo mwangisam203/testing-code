@@ -56,3 +56,7 @@ create_user(**user_data)
 nested_person = ("Maya", ("Python", "CSV"))
 person_name, (first_skill, second_skill) = nested_person
 print(f"{person_name} knows {first_skill} and {second_skill}.")
+
+coordinates = {"lat": 36.84, "lon": -84.85}
+lat, lon = coordinates.values()
+print(f"Coordinates: {lat}, {lon}")
