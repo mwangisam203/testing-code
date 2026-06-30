@@ -44,3 +44,6 @@ print("String cleaning test passed.")
 # 1. Pick a simple input.
 # 2. Decide the expected output by hand.
 # 3. Assert that the function returns that output.
+
+assert "python".upper() == "PYTHON"
+print("Uppercase test passed.")
