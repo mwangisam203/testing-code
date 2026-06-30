@@ -35,3 +35,6 @@ friendly_today = today.strftime("%B %d, %Y")
 print(f"Friendly date: {friendly_today}")
 
 # Dates are useful for deadlines, logs, reports, reminders, and filtering data.
+
+tomorrow = today + timedelta(days=1)
+print(f"Tomorrow: {tomorrow.isoformat()}")
