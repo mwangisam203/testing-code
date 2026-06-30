@@ -21,3 +21,6 @@ print(list(even_squares))
 
 # `yield` produces one value at a time and pauses the function between values.
 # This is useful when a full list would be too large or unnecessary.
+
+countdown_values = list(countdown(2))
+print(f"Countdown values: {countdown_values}")
