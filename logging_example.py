@@ -38,3 +38,5 @@ logging.warning("This is a practice warning message.")
 # INFO: normal events
 # WARNING: suspicious but not broken
 # ERROR: something failed
+
+logging.info("Logging lesson completed.")
