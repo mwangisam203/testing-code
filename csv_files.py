@@ -91,3 +91,6 @@ print(f"Average from helper: {average_from_rows(loaded_students):.1f}")
 # Convert text values back into numbers before doing math.
 # After loading CSV data, ask a real question about it: average, highest,
 # lowest, filtered rows, grouped rows, and so on.
+
+sorted_students = sorted(loaded_students, key=lambda student: student["score"])
+print(f"Lowest score: {sorted_students[0]['name']}")
