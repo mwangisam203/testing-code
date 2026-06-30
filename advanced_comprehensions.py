@@ -32,3 +32,6 @@ print(first_letters)
 # Good taste rule:
 # Use comprehensions when they stay readable.
 # If the line gets too clever, write a normal loop.
+
+score_labels = {score: ("pass" if score >= 70 else "fail") for score in scores}
+print(score_labels)
