@@ -54,3 +54,10 @@ print(f"Wrapped function name: {add_numbers.__name__}")
 # Use a decorator when you want to add the same extra behavior around many
 # functions, like logging, timing, checking permission, or printing status.
 # `*args` and `**kwargs` let the decorator work with many function shapes.
+
+@trace
+def shout(text):
+    return text.upper()
+
+
+print(shout("decorators"))
