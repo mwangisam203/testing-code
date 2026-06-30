@@ -35,3 +35,5 @@ if notes_file.exists():
 # - Path("folder") / "file.txt" builds a path safely.
 # - `.exists()` checks if something is there.
 # - `.glob("*.py")` searches for matching files.
+
+print(f"Is project folder a directory? {project_folder.is_dir()}")
