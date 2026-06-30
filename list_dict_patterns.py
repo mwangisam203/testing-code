@@ -52,3 +52,6 @@ print(f"Any expensive product? {has_expensive_product}")
 
 # This list-of-dictionaries shape appears constantly in real Python:
 # API results, database rows, CSV files, reports, and user records.
+
+all_have_prices = all("price" in product for product in products)
+print(f"Every product has a price? {all_have_prices}")
