@@ -112,3 +112,6 @@ print("Budget saved.")
 # - add a transaction safely
 # - filter transactions by category
 # - save the current budget data to JSON
+
+income_transactions = filter_by_category(transactions, "income")
+print(f"Income transactions: {len(income_transactions)}")
