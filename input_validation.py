@@ -51,3 +51,6 @@ print(f"Username valid? {is_valid_username('maya_1')}")
 # Validation usually has two steps:
 # 1. Can this value be converted?
 # 2. Does this value make sense for this program?
+
+sample_username = "py learner"
+print(f"Second username valid? {is_valid_username(sample_username)}")
