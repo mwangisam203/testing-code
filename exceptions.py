@@ -44,3 +44,8 @@ except ValueError:
 # A good error message should explain what was wrong, not just that it failed.
 # Use `else` for success-only work. Use `finally` for cleanup work, such as
 # closing files or releasing resources.
+
+try:
+    divide(10, -1)
+except ValueError as error:
+    print(f"Extra check caught: {error}")
