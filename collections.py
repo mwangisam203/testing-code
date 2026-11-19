@@ -66,3 +66,6 @@ print(grouped_words)
 
 unique_tasks = set(clean_tasks)
 print(f"Unique tasks: {unique_tasks}")
+
+student_name = student.get("name", "Unknown student")
+print(f"Student lookup: {student_name}")
