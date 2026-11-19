@@ -49,3 +49,6 @@ for key in required_keys:
 # The common cycle is: load data, change it in Python, then save it again.
 
 print(f"Skill count: {len(loaded_profile['skills'])}")
+
+has_python_skill = "python" in loaded_profile["skills"]
+print(f"Python skill recorded? {has_python_skill}")
