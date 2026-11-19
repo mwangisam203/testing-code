@@ -61,3 +61,8 @@ def add_tax(price, rate=0.08):
     return price * (1 + rate)
 
 print(f"Price with tax: ${add_tax(25):.2f}")
+
+def greet(name="friend"):
+    return f"Hello, {name}!"
+
+print(greet())
