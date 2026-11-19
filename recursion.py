@@ -58,3 +58,5 @@ print(f"Recursive sum: {recursive_sum([2, 4, 6])}")
 # how do I solve the rest?
 
 print(f"Empty recursive sum: {recursive_sum([])}")
+
+print(f"Zero factorial is {factorial(0)}")
