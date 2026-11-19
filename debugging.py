@@ -41,3 +41,6 @@ print(f"Discounted total: ${total_after_discount:.2f}")
 # 2. What actually happened?
 # 3. Which variable first becomes wrong?
 # 4. What line changed it?
+
+assert total_after_discount < total, "Discount should lower the total."
+print("DEBUG: discount check passed")
