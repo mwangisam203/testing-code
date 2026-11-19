@@ -43,3 +43,6 @@ print(f"Initials: {initials}")
 
 word_count = len(words)
 print(f"Word count: {word_count}")
+
+has_python_suffix = clean_message.lower().endswith("python")
+print(f"Ends with Python? {has_python_suffix}")
