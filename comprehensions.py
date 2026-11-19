@@ -18,3 +18,6 @@ print(squares_of_even_numbers)
 
 odd_numbers = [number for number in numbers if number % 2 != 0]
 print(f"Odd numbers: {odd_numbers}")
+
+number_text = [str(number) for number in numbers]
+print(f"Numbers as text: {number_text}")
