@@ -15,3 +15,6 @@ print(squares_of_even_numbers)
 # 1. Visit each item.
 # 2. Optionally filter items.
 # 3. Transform the items you keep.
+
+odd_numbers = [number for number in numbers if number % 2 != 0]
+print(f"Odd numbers: {odd_numbers}")
