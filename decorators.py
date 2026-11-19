@@ -61,3 +61,5 @@ def shout(text):
 
 
 print(shout("decorators"))
+
+print(f"Uppercase result: {shout('hello again')}")
