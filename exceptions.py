@@ -49,3 +49,11 @@ try:
     divide(10, -1)
 except ValueError as error:
     print(f"Extra check caught: {error}")
+
+def parse_integer(text):
+    try:
+        return int(text)
+    except ValueError:
+        return None
+
+print(f"Parsed value: {parse_integer('42')}")
