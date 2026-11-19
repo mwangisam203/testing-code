@@ -24,3 +24,6 @@ print(list(even_squares))
 
 countdown_values = list(countdown(2))
 print(f"Countdown values: {countdown_values}")
+
+squares = sum(number * number for number in range(1, 5))
+print(f"Sum of squares: {squares}")
