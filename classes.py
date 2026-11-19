@@ -100,3 +100,6 @@ print(f"Minimum balance rule: ${BankAccount.minimum_balance}")
 
 accounts = [savings, checking]
 print(f"Total stored money: ${sum(account.get_balance() for account in accounts):.2f}")
+
+largest_account = max(accounts, key=lambda account: account.get_balance())
+print(f"Largest account: {largest_account.summary()}")
