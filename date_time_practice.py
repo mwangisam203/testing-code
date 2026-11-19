@@ -38,3 +38,6 @@ print(f"Friendly date: {friendly_today}")
 
 tomorrow = today + timedelta(days=1)
 print(f"Tomorrow: {tomorrow.isoformat()}")
+
+weekday_name = today.strftime("%A")
+print(f"Today is {weekday_name}.")
