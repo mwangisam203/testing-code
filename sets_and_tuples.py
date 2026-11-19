@@ -18,3 +18,7 @@ print(f"Latitude: {location[0]}")
 
 # Sets remove duplicates. Tuples are ordered and cannot be changed.
 print(f"Is red included? {'red' in unique_colors}")
+
+warm_colors = {"red", "orange", "yellow"}
+favorite_colors = {"blue", "red", "green"}
+print(f"Colors in both sets: {warm_colors & favorite_colors}")
