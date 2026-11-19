@@ -115,3 +115,6 @@ print("Budget saved.")
 
 income_transactions = filter_by_category(transactions, "income")
 print(f"Income transactions: {len(income_transactions)}")
+
+total_amount = sum(transaction["amount"] for transaction in transactions)
+print(f"All transaction amounts: ${total_amount:.2f}")
