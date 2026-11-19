@@ -25,3 +25,6 @@ print(f"Top student: {top_student[0]}")
 
 lowest_student = min(students, key=lambda student: student[1])
 print(f"Needs support: {lowest_student[0]}")
+
+students_by_name = sorted(students, key=lambda student: student[0].lower())
+print(f"Students by name: {students_by_name}")
