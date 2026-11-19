@@ -44,3 +44,8 @@ def repeat_word(word: str, times: int) -> str:
 
 
 print(repeat_word("ha", 3))
+
+def format_price(price: float) -> str:
+    return f"${price:.2f}"
+
+print(format_price(19.5))
