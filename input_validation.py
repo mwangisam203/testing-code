@@ -54,3 +54,8 @@ print(f"Username valid? {is_valid_username('maya_1')}")
 
 sample_username = "py learner"
 print(f"Second username valid? {is_valid_username(sample_username)}")
+
+def has_minimum_length(value, minimum=8):
+    return len(value) >= minimum
+
+print(f"Password length valid? {has_minimum_length('python123')}")
