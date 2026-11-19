@@ -56,3 +56,8 @@ def apply_discount(price, *, percent):
 
 
 print(f"Discounted price: ${apply_discount(100, percent=0.15):.2f}")
+
+def add_tax(price, rate=0.08):
+    return price * (1 + rate)
+
+print(f"Price with tax: ${add_tax(25):.2f}")
