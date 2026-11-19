@@ -86,3 +86,12 @@ print(f"Grade: {letter_grade(87)}")
 # 3. Use `else` for everything left over.
 # Use `and`, `or`, and `not` when one decision depends on multiple facts.
 # Early returns are useful when you want to avoid a staircase of nested code.
+
+def describe_number(number):
+    if number < 0:
+        return "negative"
+    if number > 0:
+        return "positive"
+    return "zero"
+
+print(f"Number type: {describe_number(-3)}")
