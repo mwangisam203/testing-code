@@ -94,3 +94,6 @@ print(f"Average from helper: {average_from_rows(loaded_students):.1f}")
 
 sorted_students = sorted(loaded_students, key=lambda student: student["score"])
 print(f"Lowest score: {sorted_students[0]['name']}")
+
+highest_score = max(loaded_students, key=lambda student: student["score"])
+print(f"Highest score: {highest_score["name"]}")
