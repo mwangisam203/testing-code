@@ -48,3 +48,6 @@ print(f"Highest price: {highest_price}")
 # - list comprehensions instead of map/filter
 # - sum(prices) instead of reduce for adding
 # Learn these so you can read them, then choose the clearest option.
+
+small_prices = list(filter(lambda price: price < 10, prices))
+print(f"Prices under ten: {small_prices}")
