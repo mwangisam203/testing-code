@@ -71,3 +71,6 @@ print(rows)
 
 math_scores = [student["scores"]["math"] for student in students]
 print(f"Math scores: {math_scores}")
+
+student_names = [student["name"] for student in students]
+print(f"Student names: {student_names}")
