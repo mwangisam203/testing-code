@@ -18,3 +18,5 @@ print(first_line)
 
 resource_name = "practice file"
 print(f"Managed resource: {resource_name}")
+
+print(f"Read first line safely: {first_line[:40]}")
