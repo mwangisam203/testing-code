@@ -12,3 +12,6 @@ for name, score in zip(names, scores):
     print(f"{name} scored {score}")
 
 # Important: zip stops when the shortest sequence runs out of items.
+
+score_lookup = dict(zip(names, scores))
+print(f"Score lookup: {score_lookup}")
