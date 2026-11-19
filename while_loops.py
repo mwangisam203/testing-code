@@ -32,3 +32,8 @@ if is_logged_in:
 # 1. What condition keeps the loop running?
 # 2. What changes inside the loop?
 # 3. What stops the loop?
+
+attempts_left = 3
+while attempts_left > 0:
+    print(f"Attempts left: {attempts_left}")
+    attempts_left -= 1
