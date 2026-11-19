@@ -69,3 +69,6 @@ print(f"Unique tasks: {unique_tasks}")
 
 student_name = student.get("name", "Unknown student")
 print(f"Student lookup: {student_name}")
+
+sorted_scores = sorted(scores)
+print(f"Scores from low to high: {sorted_scores}")
