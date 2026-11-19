@@ -46,4 +46,4 @@ long_tasks = [task for task in tasks if task["minutes"] >= 30]
 print(f"Long tasks: {[task['title'] for task in long_tasks]}")
 
 alphabetical_tasks = sorted(tasks, key=lambda task: task["title"].lower())
-print(f"Alphabetical tasks: {[task["title"] for task in alphabetical_tasks]}")
+print(f"Alphabetical tasks: {[task['title'] for task in alphabetical_tasks]}")

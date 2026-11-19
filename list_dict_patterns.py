@@ -57,4 +57,4 @@ all_have_prices = all("price" in product for product in products)
 print(f"Every product has a price? {all_have_prices}")
 
 cheapest_product = min(products, key=lambda product: product["price"])
-print(f"Cheapest product: {cheapest_product["name"]}")
+print(f"Cheapest product: {cheapest_product['name']}")
