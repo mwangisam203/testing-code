@@ -35,3 +35,6 @@ print(first_letters)
 
 score_labels = {score: ("pass" if score >= 70 else "fail") for score in scores}
 print(score_labels)
+
+passing_scores = {score for score in scores if score >= 70}
+print(f"Passing scores: {passing_scores}")
