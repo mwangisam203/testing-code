@@ -10,3 +10,6 @@ for position, task in enumerate(tasks, start=1):
     # Step 4: Python unpacks each pair into `position` and `task`.
     # The loop repeats once for every item in the list.
     print(f"{position}. {task}")
+
+task_numbers = [f"Task {number}: {task}" for number, task in enumerate(tasks, start=1)]
+print(task_numbers)
