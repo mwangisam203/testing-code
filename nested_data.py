@@ -74,3 +74,6 @@ print(f"Math scores: {math_scores}")
 
 student_names = [student["name"] for student in students]
 print(f"Student names: {student_names}")
+
+phone = students[0].get("contact", {}).get("phone", "not provided")
+print(f"First student phone: {phone}")
