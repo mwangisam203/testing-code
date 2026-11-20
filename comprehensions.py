@@ -21,3 +21,6 @@ print(f"Odd numbers: {odd_numbers}")
 
 number_text = [str(number) for number in numbers]
 print(f"Numbers as text: {number_text}")
+
+doubled_numbers = [number * 2 for number in numbers]
+print(f"Doubled numbers: {doubled_numbers}")
