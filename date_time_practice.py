@@ -41,3 +41,6 @@ print(f"Tomorrow: {tomorrow.isoformat()}")
 
 weekday_name = today.strftime("%A")
 print(f"Today is {weekday_name}.")
+
+days_until_deadline = (deadline - today).days
+print(f"Days until deadline: {days_until_deadline}")
