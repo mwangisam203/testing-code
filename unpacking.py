@@ -64,3 +64,6 @@ print(f"Coordinates: {lat}, {lon}")
 first_color, second_color = "blue", "green"
 first_color, second_color = second_color, first_color
 print(f"Swapped colors: {first_color}, {second_color}")
+
+setting_keys = list(settings)
+print(f"Setting keys: {setting_keys}")
