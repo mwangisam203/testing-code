@@ -49,3 +49,5 @@ def format_price(price: float) -> str:
     return f"${price:.2f}"
 
 print(format_price(19.5))
+
+print(f"Small average: {average([2.5, 3.5]):.1f}")
