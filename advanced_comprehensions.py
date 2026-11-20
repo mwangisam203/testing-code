@@ -38,3 +38,6 @@ print(score_labels)
 
 passing_scores = {score for score in scores if score >= 70}
 print(f"Passing scores: {passing_scores}")
+
+name_lengths = {name: len(name) for name in students}
+print(f"Name lengths: {name_lengths}")
