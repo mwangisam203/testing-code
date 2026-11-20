@@ -72,3 +72,5 @@ print(f"Student lookup: {student_name}")
 
 sorted_scores = sorted(scores)
 print(f"Scores from low to high: {sorted_scores}")
+
+print(f"Highest score so far: {max(scores)}")
