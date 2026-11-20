@@ -97,3 +97,6 @@ print(f"Lowest score: {sorted_students[0]['name']}")
 
 highest_score = max(loaded_students, key=lambda student: student["score"])
 print(f"Highest score: {highest_score['name']}")
+
+score_range = highest_score["score"] - sorted_students[0]["score"]
+print(f"Score range: {score_range}")
