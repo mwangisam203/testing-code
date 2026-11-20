@@ -103,3 +103,5 @@ print(f"Total stored money: ${sum(account.get_balance() for account in accounts)
 
 largest_account = max(accounts, key=lambda account: account.get_balance())
 print(f"Largest account: {largest_account.summary()}")
+
+print(f"Savings account summary: {savings.summary()}")
