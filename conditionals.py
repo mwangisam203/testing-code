@@ -95,3 +95,5 @@ def describe_number(number):
     return "zero"
 
 print(f"Number type: {describe_number(-3)}")
+
+print(f"Low score grade: {letter_grade(59)}")
