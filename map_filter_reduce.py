@@ -51,3 +51,6 @@ print(f"Highest price: {highest_price}")
 
 small_prices = list(filter(lambda price: price < 10, prices))
 print(f"Prices under ten: {small_prices}")
+
+average_price = sum(prices) / len(prices)
+print(f"Average price: {average_price:.2f}")
