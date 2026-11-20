@@ -59,3 +59,5 @@ def has_minimum_length(value, minimum=8):
     return len(value) >= minimum
 
 print(f"Password length valid? {has_minimum_length('python123')}")
+
+print(f"Short username valid? {is_valid_username('ab')}")
