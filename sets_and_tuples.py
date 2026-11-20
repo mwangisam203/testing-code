@@ -22,3 +22,5 @@ print(f"Is red included? {'red' in unique_colors}")
 warm_colors = {"red", "orange", "yellow"}
 favorite_colors = {"blue", "red", "green"}
 print(f"Colors in both sets: {warm_colors & favorite_colors}")
+
+print(f"Is red a warm color? {'red' in warm_colors}")
