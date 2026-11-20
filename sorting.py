@@ -28,3 +28,6 @@ print(f"Needs support: {lowest_student[0]}")
 
 students_by_name = sorted(students, key=lambda student: student[0].lower())
 print(f"Students by name: {students_by_name}")
+
+students_low_to_high = sorted(students, key=lambda student: student[1])
+print(f"Lowest to highest: {students_low_to_high}")
