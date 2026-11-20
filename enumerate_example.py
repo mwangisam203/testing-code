@@ -13,3 +13,6 @@ for position, task in enumerate(tasks, start=1):
 
 task_numbers = [f"Task {number}: {task}" for number, task in enumerate(tasks, start=1)]
 print(task_numbers)
+
+for index, task in enumerate(tasks):
+    print(f"Task at index {index}: {task}")
