@@ -27,3 +27,6 @@ print(f"Countdown values: {countdown_values}")
 
 squares = sum(number * number for number in range(1, 5))
 print(f"Sum of squares: {squares}")
+
+first_count = next(countdown(1))
+print(f"First generated count: {first_count}")
