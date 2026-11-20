@@ -46,3 +46,6 @@ print(f"Word count: {word_count}")
 
 has_python_suffix = clean_message.lower().endswith("python")
 print(f"Ends with Python? {has_python_suffix}")
+
+word_lengths = {word: len(word) for word in words}
+print(f"Word lengths: {word_lengths}")
