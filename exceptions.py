@@ -57,3 +57,5 @@ def parse_integer(text):
         return None
 
 print(f"Parsed value: {parse_integer('42')}")
+
+print(f"Invalid parsed value: {parse_integer('oops')}")
