@@ -40,3 +40,5 @@ print(f"Is project folder a directory? {project_folder.is_dir()}")
 
 python_names = [path.name for path in python_files[:3]]
 print(f"Sample Python files: {python_names}")
+
+print(f"Notes file extension: {notes_file.suffix}")
