@@ -52,3 +52,5 @@ print(f"Skill count: {len(loaded_profile['skills'])}")
 
 has_python_skill = "python" in loaded_profile["skills"]
 print(f"Python skill recorded? {has_python_skill}")
+
+print(f"Profile name: {loaded_profile['name']}")
