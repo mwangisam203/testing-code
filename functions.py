@@ -66,3 +66,5 @@ def greet(name="friend"):
     return f"Hello, {name}!"
 
 print(greet())
+
+print(f"Flexible sum: {add_all(10, 20, 30)}")
