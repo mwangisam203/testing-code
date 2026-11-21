@@ -47,3 +47,6 @@ print(f"Long tasks: {[task['title'] for task in long_tasks]}")
 
 alphabetical_tasks = sorted(tasks, key=lambda task: task["title"].lower())
 print(f"Alphabetical tasks: {[task['title'] for task in alphabetical_tasks]}")
+
+longest_task = max(tasks, key=lambda task: task["minutes"])
+print(f"Longest task: {longest_task['title']}")
