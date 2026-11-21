@@ -20,3 +20,5 @@ print(pet.speak())
 # Inheritance thinking:
 # Use it when objects have an "is a" relationship.
 # A Dog is an Animal, so inheritance makes sense here.
+
+print(f"Is pet an Animal? {isinstance(pet, Animal)}")
