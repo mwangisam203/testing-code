@@ -105,3 +105,5 @@ largest_account = max(accounts, key=lambda account: account.get_balance())
 print(f"Largest account: {largest_account.summary()}")
 
 print(f"Savings account summary: {savings.summary()}")
+
+print(f"Savings balance: ${savings.get_balance():.2f}")
