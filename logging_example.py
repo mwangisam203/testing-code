@@ -42,3 +42,5 @@ logging.warning("This is a practice warning message.")
 logging.info("Logging lesson completed.")
 
 logging.info("Finished calculating the example bill")
+
+logging.info("Example report is ready")
