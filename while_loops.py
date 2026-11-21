@@ -37,3 +37,8 @@ attempts_left = 3
 while attempts_left > 0:
     print(f"Attempts left: {attempts_left}")
     attempts_left -= 1
+
+steps_left = 2
+while steps_left > 0:
+    print(f"Steps left: {steps_left}")
+    steps_left -= 1
