@@ -16,3 +16,5 @@ print(task_numbers)
 
 for index, task in enumerate(tasks):
     print(f"Task at index {index}: {task}")
+
+print(f"Number of tasks: {len(tasks)}")
