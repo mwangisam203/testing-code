@@ -67,3 +67,6 @@ print(f"Swapped colors: {first_color}, {second_color}")
 
 setting_keys = list(settings)
 print(f"Setting keys: {setting_keys}")
+
+setting_pairs = list(settings.items())
+print(f"Setting pairs: {setting_pairs}")
