@@ -42,3 +42,5 @@ python_names = [path.name for path in python_files[:3]]
 print(f"Sample Python files: {python_names}")
 
 print(f"Notes file extension: {notes_file.suffix}")
+
+print(f"Project folder name: {project_folder.name}")
