@@ -44,3 +44,5 @@ print(f"Discounted total: ${total_after_discount:.2f}")
 
 assert total_after_discount < total, "Discount should lower the total."
 print("DEBUG: discount check passed")
+
+print(f"Discount amount: ${total - total_after_discount:.2f}")
