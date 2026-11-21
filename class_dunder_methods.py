@@ -35,3 +35,5 @@ print(book == different_book)
 
 # Dunder means "double underscore."
 # These methods let your objects work naturally with Python features.
+
+print(f"Book author: {book.author}")
