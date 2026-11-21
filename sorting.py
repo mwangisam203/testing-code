@@ -31,3 +31,6 @@ print(f"Students by name: {students_by_name}")
 
 students_low_to_high = sorted(students, key=lambda student: student[1])
 print(f"Lowest to highest: {students_low_to_high}")
+
+score_order = sorted(students, key=lambda student: student[1])
+print(f"Score order: {score_order}")
