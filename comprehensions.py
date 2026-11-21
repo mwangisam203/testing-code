@@ -24,3 +24,6 @@ print(f"Numbers as text: {number_text}")
 
 doubled_numbers = [number * 2 for number in numbers]
 print(f"Doubled numbers: {doubled_numbers}")
+
+next_numbers = [number + 1 for number in numbers]
+print(f"Next numbers: {next_numbers}")
