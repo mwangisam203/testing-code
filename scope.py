@@ -70,3 +70,5 @@ print(counter())
 
 quadruple = make_multiplier(4)
 print(f"Quadruple 5: {quadruple(5)}")
+
+print(f"Counter again: {counter()}")
