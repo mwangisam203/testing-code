@@ -20,3 +20,5 @@ resource_name = "practice file"
 print(f"Managed resource: {resource_name}")
 
 print(f"Read first line safely: {first_line[:40]}")
+
+print(f"Resource label length: {len(resource_name)}")
