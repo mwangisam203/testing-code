@@ -24,3 +24,6 @@ favorite_colors = {"blue", "red", "green"}
 print(f"Colors in both sets: {warm_colors & favorite_colors}")
 
 print(f"Is red a warm color? {'red' in warm_colors}")
+
+more_colors = unique_colors | {"purple"}
+print(f"Combined colors: {more_colors}")
