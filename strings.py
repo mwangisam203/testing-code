@@ -49,3 +49,6 @@ print(f"Ends with Python? {has_python_suffix}")
 
 word_lengths = {word: len(word) for word in words}
 print(f"Word lengths: {word_lengths}")
+
+title_words = [word.title() for word in words]
+print(f"Title case words: {title_words}")
