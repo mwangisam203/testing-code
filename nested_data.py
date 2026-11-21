@@ -77,3 +77,6 @@ print(f"Student names: {student_names}")
 
 phone = students[0].get("contact", {}).get("phone", "not provided")
 print(f"First student phone: {phone}")
+
+first_student_name = students[0]["name"]
+print(f"First student: {first_student_name}")
