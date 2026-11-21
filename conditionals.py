@@ -97,3 +97,5 @@ def describe_number(number):
 print(f"Number type: {describe_number(-3)}")
 
 print(f"Low score grade: {letter_grade(59)}")
+
+print(f"No ticket result: {can_enter_event(20, False)}")
