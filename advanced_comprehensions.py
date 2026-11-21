@@ -41,3 +41,6 @@ print(f"Passing scores: {passing_scores}")
 
 name_lengths = {name: len(name) for name in students}
 print(f"Name lengths: {name_lengths}")
+
+uppercase_names = [name.upper() for name in students]
+print(f"Uppercase names: {uppercase_names}")
