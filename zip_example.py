@@ -18,3 +18,6 @@ print(f"Score lookup: {score_lookup}")
 
 name_score_pairs = list(zip(names, scores))
 print(f"Name and score pairs: {name_score_pairs}")
+
+total_scores = sum(score for name, score in zip(names, scores))
+print(f"Combined scores: {total_scores}")
