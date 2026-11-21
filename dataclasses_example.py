@@ -39,3 +39,5 @@ print(course)
 
 course.students.append("Ari")
 print(f"Updated course: {course}")
+
+print(f"Course student count: {len(course.students)}")
