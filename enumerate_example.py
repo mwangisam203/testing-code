@@ -18,3 +18,6 @@ for index, task in enumerate(tasks):
     print(f"Task at index {index}: {task}")
 
 print(f"Number of tasks: {len(tasks)}")
+
+task_positions = {task: index for index, task in enumerate(tasks, start=1)}
+print(f"Task positions: {task_positions}")
