@@ -72,3 +72,6 @@ quadruple = make_multiplier(4)
 print(f"Quadruple 5: {quadruple(5)}")
 
 print(f"Counter again: {counter()}")
+
+half = make_multiplier(0.5)
+print(f"Half of 10: {half(10)}")
