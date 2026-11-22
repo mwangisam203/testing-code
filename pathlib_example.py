@@ -44,3 +44,6 @@ print(f"Sample Python files: {python_names}")
 print(f"Notes file extension: {notes_file.suffix}")
 
 print(f"Project folder name: {project_folder.name}")
+
+python_file_count = sum(1 for path in python_files if path.is_file())
+print(f"Python files counted: {python_file_count}")
