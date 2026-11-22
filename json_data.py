@@ -57,3 +57,6 @@ print(f"Profile name: {loaded_profile['name']}")
 
 sorted_skills = sorted(loaded_profile["skills"])
 print(f"Sorted skills: {sorted_skills}")
+
+profile_keys = sorted(loaded_profile.keys())
+print(f"Profile keys: {profile_keys}")
