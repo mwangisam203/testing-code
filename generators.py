@@ -32,3 +32,5 @@ first_count = next(countdown(1))
 print(f"First generated count: {first_count}")
 
 print(f"Countdown total: {sum(countdown(3))}")
+
+print(f"Four step countdown: {list(countdown(4))}")
