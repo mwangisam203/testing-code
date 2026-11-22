@@ -52,3 +52,6 @@ print(f"Word lengths: {word_lengths}")
 
 title_words = [word.title() for word in words]
 print(f"Title case words: {title_words}")
+
+character_count = len(clean_message)
+print(f"Clean message characters: {character_count}")
