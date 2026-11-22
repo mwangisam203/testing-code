@@ -42,3 +42,5 @@ if "--repeat" in sys.argv:
 # point for understanding how terminal input reaches your script.
 
 print(f"Argument count: {len(sys.argv)}")
+
+print(f"Script path: {sys.argv[0]}")
