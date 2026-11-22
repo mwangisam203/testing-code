@@ -57,3 +57,6 @@ print(f"Average price: {average_price:.2f}")
 
 lowest_price = min(prices)
 print(f"Lowest price: {lowest_price:.2f}")
+
+price_count = len(small_prices)
+print(f"Number of prices under ten: {price_count}")
