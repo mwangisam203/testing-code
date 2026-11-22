@@ -22,3 +22,5 @@ print(pet.speak())
 # A Dog is an Animal, so inheritance makes sense here.
 
 print(f"Is pet an Animal? {isinstance(pet, Animal)}")
+
+print(f"Animal sound: {Animal().speak()}")
