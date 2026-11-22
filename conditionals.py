@@ -99,3 +99,5 @@ print(f"Number type: {describe_number(-3)}")
 print(f"Low score grade: {letter_grade(59)}")
 
 print(f"No ticket result: {can_enter_event(20, False)}")
+
+print(f"Top grade example: {letter_grade(95)}")
