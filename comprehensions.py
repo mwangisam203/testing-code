@@ -27,3 +27,6 @@ print(f"Doubled numbers: {doubled_numbers}")
 
 next_numbers = [number + 1 for number in numbers]
 print(f"Next numbers: {next_numbers}")
+
+reversed_numbers = numbers[::-1]
+print(f"Reversed numbers: {reversed_numbers}")
