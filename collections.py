@@ -76,3 +76,5 @@ print(f"Scores from low to high: {sorted_scores}")
 print(f"Highest score so far: {max(scores)}")
 
 print(f"Stored grade: {student['grade']}")
+
+print(f"Lowest score so far: {min(scores)}")
