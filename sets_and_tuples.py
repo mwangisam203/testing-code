@@ -27,3 +27,6 @@ print(f"Is red a warm color? {'red' in warm_colors}")
 
 more_colors = unique_colors | {"purple"}
 print(f"Combined colors: {more_colors}")
+
+primary_colors = {"red", "blue", "yellow"}
+print(f"Colors not in the original set: {primary_colors - unique_colors}")
