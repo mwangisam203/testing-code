@@ -53,3 +53,5 @@ print(format_price(19.5))
 print(f"Small average: {average([2.5, 3.5]):.1f}")
 
 print(f"Formatted small price: {format_price(3.5)}")
+
+print(f"Average score: {average([80, 90, 100]):.1f}")
