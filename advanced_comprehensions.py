@@ -44,3 +44,6 @@ print(f"Name lengths: {name_lengths}")
 
 uppercase_names = [name.upper() for name in students]
 print(f"Uppercase names: {uppercase_names}")
+
+uppercase_lookup = {name: name.upper() for name in students}
+print(f"Uppercase lookup: {uppercase_lookup}")
