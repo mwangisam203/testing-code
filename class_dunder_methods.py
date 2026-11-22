@@ -37,3 +37,5 @@ print(book == different_book)
 # These methods let your objects work naturally with Python features.
 
 print(f"Book author: {book.author}")
+
+print(f"Same book title? {book.title == same_book.title}")
