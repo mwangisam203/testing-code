@@ -80,3 +80,6 @@ print(f"First student phone: {phone}")
 
 first_student_name = students[0]["name"]
 print(f"First student: {first_student_name}")
+
+average_math = sum(math_scores) / len(math_scores)
+print(f"Average math score: {average_math:.1f}")
