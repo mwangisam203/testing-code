@@ -70,3 +70,5 @@ print(greet())
 print(f"Flexible sum: {add_all(10, 20, 30)}")
 
 print(describe_purchase(5, 3))
+
+print(f"One item total: ${calculate_total(9.99, 1):.2f}")
