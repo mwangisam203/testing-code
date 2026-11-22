@@ -34,3 +34,6 @@ print(f"Lowest to highest: {students_low_to_high}")
 
 score_order = sorted(students, key=lambda student: student[1])
 print(f"Score order: {score_order}")
+
+names_reverse = sorted((student[0] for student in students), reverse=True)
+print(f"Names in reverse order: {names_reverse}")
