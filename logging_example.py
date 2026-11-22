@@ -44,3 +44,5 @@ logging.info("Logging lesson completed.")
 logging.info("Finished calculating the example bill")
 
 logging.info("Example report is ready")
+
+logging.info("Example values have been counted")
