@@ -41,3 +41,5 @@ course.students.append("Ari")
 print(f"Updated course: {course}")
 
 print(f"Course student count: {len(course.students)}")
+
+print(f"Maya is enrolled? {'Maya' in course.students}")
