@@ -102,3 +102,6 @@ score_range = highest_score["score"] - sorted_students[0]["score"]
 print(f"Score range: {score_range}")
 
 print(f"Rounded student average: {average_from_rows(loaded_students):.0f}")
+
+middle_student = sorted_students[len(sorted_students) // 2]
+print(f"Middle score: {middle_student['score']}")
