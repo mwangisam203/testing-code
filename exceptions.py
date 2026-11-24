@@ -63,3 +63,5 @@ print(f"Invalid parsed value: {parse_integer('oops')}")
 print(f"Bad input result: {parse_integer('hello')}")
 
 print(f"Parsed zero: {parse_integer('0')}")
+
+print(f"Parsed negative number: {parse_integer('-7')}")
