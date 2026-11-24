@@ -24,3 +24,5 @@ print(f"Combined scores: {total_scores}")
 
 best_pair = max(zip(names, scores), key=lambda pair: pair[1])
 print(f"Best score pair: {best_pair}")
+
+print(f"Number of score pairs: {len(list(zip(names, scores)))}")
