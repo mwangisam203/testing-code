@@ -83,3 +83,5 @@ print(f"First student: {first_student_name}")
 
 average_math = sum(math_scores) / len(math_scores)
 print(f"Average math score: {average_math:.1f}")
+
+print(f"Flattened score rows: {len(rows)}")
