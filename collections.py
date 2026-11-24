@@ -78,3 +78,6 @@ print(f"Highest score so far: {max(scores)}")
 print(f"Stored grade: {student['grade']}")
 
 print(f"Lowest score so far: {min(scores)}")
+
+score_total = sum(student["scores"])
+print(f"Student score total: {score_total}")
