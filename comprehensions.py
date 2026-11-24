@@ -30,3 +30,6 @@ print(f"Next numbers: {next_numbers}")
 
 reversed_numbers = numbers[::-1]
 print(f"Reversed numbers: {reversed_numbers}")
+
+short_numbers = [number for number in numbers if number < 4]
+print(f"Numbers under four: {short_numbers}")
