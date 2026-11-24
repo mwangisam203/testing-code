@@ -105,3 +105,5 @@ print(f"Rounded student average: {average_from_rows(loaded_students):.0f}")
 
 middle_student = sorted_students[len(sorted_students) // 2]
 print(f"Middle score: {middle_student['score']}")
+
+print(f"CSV scores analyzed: {len(loaded_students)}")
