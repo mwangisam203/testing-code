@@ -49,3 +49,6 @@ print(f"Discount amount: ${total - total_after_discount:.2f}")
 
 discount_saved = total - total_after_discount
 print(f"DEBUG saved amount: ${discount_saved:.2f}")
+
+assert discount_saved >= 0, "A discount should not add to the total."
+print("DEBUG: saved amount is nonnegative")
