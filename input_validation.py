@@ -66,3 +66,5 @@ print(f"Valid identifier? {is_valid_username('maya_2')}")
 
 normalized_username = sample_username.strip()
 print(f"Clean username: {normalized_username!r}")
+
+print(f"Clean username valid? {is_valid_username(normalized_username)}")
