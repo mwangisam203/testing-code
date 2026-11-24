@@ -24,3 +24,5 @@ print(f"Read first line safely: {first_line[:40]}")
 print(f"Resource label length: {len(resource_name)}")
 
 print(f"First line length: {len(first_line)}")
+
+print(f"First line preview length: {len(first_line[:40])}")
