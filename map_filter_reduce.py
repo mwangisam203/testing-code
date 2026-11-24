@@ -60,3 +60,5 @@ print(f"Lowest price: {lowest_price:.2f}")
 
 price_count = len(small_prices)
 print(f"Number of prices under ten: {price_count}")
+
+print(f"Total of small prices: {sum(small_prices):.2f}")
