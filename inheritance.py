@@ -24,3 +24,5 @@ print(pet.speak())
 print(f"Is pet an Animal? {isinstance(pet, Animal)}")
 
 print(f"Animal sound: {Animal().speak()}")
+
+print(f"Dog response: {pet.speak()}")
