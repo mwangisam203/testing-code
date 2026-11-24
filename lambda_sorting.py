@@ -53,3 +53,6 @@ print(f"Longest task: {longest_task['title']}")
 
 shortest_task = min(tasks, key=lambda task: task["minutes"])
 print(f"Shortest task: {shortest_task['title']}")
+
+largest_task = max(tasks, key=lambda task: task["minutes"])
+print(f"Largest task duration: {largest_task['minutes']} minutes")
