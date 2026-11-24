@@ -74,3 +74,6 @@ print(f"Setting pairs: {setting_pairs}")
 first_item, *middle_items, last_item = ["pen", "book", "paper", "folder"]
 print(f"Outside items: {first_item}, {last_item}")
 print(f"Middle items: {middle_items}")
+
+first_name, last_name = ("Maya", "Chen")
+print(f"Name parts: {first_name} / {last_name}")
