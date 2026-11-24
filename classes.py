@@ -109,3 +109,5 @@ print(f"Savings account summary: {savings.summary()}")
 print(f"Savings balance: ${savings.get_balance():.2f}")
 
 print(f"Checking can cover $30? {checking.get_balance() >= 30}")
+
+print(f"Account balance is positive? {account.get_balance() > 0}")
