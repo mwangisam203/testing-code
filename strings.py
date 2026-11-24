@@ -55,3 +55,6 @@ print(f"Title case words: {title_words}")
 
 character_count = len(clean_message)
 print(f"Clean message characters: {character_count}")
+
+space_count = message.count(" ")
+print(f"Spaces in original message: {space_count}")
