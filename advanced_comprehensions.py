@@ -47,3 +47,6 @@ print(f"Uppercase names: {uppercase_names}")
 
 uppercase_lookup = {name: name.upper() for name in students}
 print(f"Uppercase lookup: {uppercase_lookup}")
+
+lowercase_lookup = {name.lower(): name for name in students}
+print(f"Lowercase name lookup: {lowercase_lookup}")
