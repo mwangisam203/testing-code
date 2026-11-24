@@ -75,3 +75,5 @@ print(f"Counter again: {counter()}")
 
 half = make_multiplier(0.5)
 print(f"Half of 10: {half(10)}")
+
+print(f"Triple 4: {triple(4)}")
