@@ -37,3 +37,6 @@ print(f"Score order: {score_order}")
 
 names_reverse = sorted((student[0] for student in students), reverse=True)
 print(f"Names in reverse order: {names_reverse}")
+
+score_spread = max(score for name, score in students) - min(score for name, score in students)
+print(f"Score spread: {score_spread}")
