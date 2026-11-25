@@ -85,3 +85,6 @@ average_math = sum(math_scores) / len(math_scores)
 print(f"Average math score: {average_math:.1f}")
 
 print(f"Flattened score rows: {len(rows)}")
+
+first_row_subject = rows[0]["subject"]
+print(f"First flattened subject: {first_row_subject}")
