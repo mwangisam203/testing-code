@@ -107,3 +107,6 @@ middle_student = sorted_students[len(sorted_students) // 2]
 print(f"Middle score: {middle_student['score']}")
 
 print(f"CSV scores analyzed: {len(loaded_students)}")
+
+top_student_name = highest_score["name"]
+print(f"Top student name: {top_student_name}")
