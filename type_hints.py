@@ -57,3 +57,5 @@ print(f"Formatted small price: {format_price(3.5)}")
 print(f"Average score: {average([80, 90, 100]):.1f}")
 
 print(f"Zero price: {format_price(0)}")
+
+print(f"Whole dollar amount: {format_price(100)}")
