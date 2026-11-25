@@ -32,3 +32,5 @@ primary_colors = {"red", "blue", "yellow"}
 print(f"Colors not in the original set: {primary_colors - unique_colors}")
 
 print(f"Coordinate pair length: {len(location)}")
+
+print(f"Last unique color alphabetically: {max(unique_colors)}")
