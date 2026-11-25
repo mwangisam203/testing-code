@@ -48,3 +48,5 @@ logging.info("Example report is ready")
 logging.info("Example values have been counted")
 
 logging.info("Finished the small calculation example")
+
+logging.info("Finished reviewing the example values")
