@@ -23,3 +23,6 @@ task_positions = {task: index for index, task in enumerate(tasks, start=1)}
 print(f"Task positions: {task_positions}")
 
 print(f"First task: {tasks[0]}")
+
+numbered_tasks = list(enumerate(tasks, start=1))
+print(f"Numbered task pairs: {numbered_tasks}")
