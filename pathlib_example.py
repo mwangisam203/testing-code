@@ -49,3 +49,5 @@ python_file_count = sum(1 for path in python_files if path.is_file())
 print(f"Python files counted: {python_file_count}")
 
 print(f"Notes file name: {notes_file.name}")
+
+print(f"Notes path is a file? {notes_file.is_file()}")
