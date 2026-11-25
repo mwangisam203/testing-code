@@ -42,3 +42,10 @@ steps_left = 2
 while steps_left > 0:
     print(f"Steps left: {steps_left}")
     steps_left -= 1
+
+counted_total = 0
+current_number = 1
+while current_number <= 3:
+    counted_total += current_number
+    current_number += 1
+print(f"Counted total: {counted_total}")
