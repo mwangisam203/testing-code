@@ -39,3 +39,6 @@ with open(filename, "r", encoding="utf-8") as file:
     line_count = len(file.readlines())
 
 print(f"Saved note lines: {line_count}")
+
+has_saved_lines = line_count > 0
+print(f"Notes contain lines? {has_saved_lines}")
