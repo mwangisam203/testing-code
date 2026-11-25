@@ -65,3 +65,5 @@ print(f"Bad input result: {parse_integer('hello')}")
 print(f"Parsed zero: {parse_integer('0')}")
 
 print(f"Parsed negative number: {parse_integer('-7')}")
+
+print(f"Parsed year: {parse_integer('2026')}")
