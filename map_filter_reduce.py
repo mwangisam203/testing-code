@@ -62,3 +62,6 @@ price_count = len(small_prices)
 print(f"Number of prices under ten: {price_count}")
 
 print(f"Total of small prices: {sum(small_prices):.2f}")
+
+has_price_over_twenty = any(price > 20 for price in prices)
+print(f"Any price over twenty? {has_price_over_twenty}")
