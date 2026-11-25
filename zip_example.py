@@ -26,3 +26,6 @@ best_pair = max(zip(names, scores), key=lambda pair: pair[1])
 print(f"Best score pair: {best_pair}")
 
 print(f"Number of score pairs: {len(list(zip(names, scores)))}")
+
+score_gaps = [abs(first - second) for first, second in zip(scores, reversed(scores))]
+print(f"Score gaps: {score_gaps}")
