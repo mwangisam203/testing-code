@@ -29,3 +29,5 @@ print(f"Database URL: {get_database_url()}")
 # Put secret values in environment variables or ignored `.env` files.
 
 print(f"Has debug setting? {'DEBUG' in os.environ}")
+
+print(f"Display app mode: {app_mode.capitalize()}")
