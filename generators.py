@@ -36,3 +36,6 @@ print(f"Countdown total: {sum(countdown(3))}")
 print(f"Four step countdown: {list(countdown(4))}")
 
 print(f"Largest countdown value: {max(countdown(4))}")
+
+first_even = next((number for number in range(10) if number % 2 == 0), None)
+print(f"First even number: {first_even}")
