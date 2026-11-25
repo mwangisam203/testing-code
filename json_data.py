@@ -62,3 +62,6 @@ profile_keys = sorted(loaded_profile.keys())
 print(f"Profile keys: {profile_keys}")
 
 print(f"Profile has a name? {'name' in loaded_profile}")
+
+learning_status = loaded_profile.get("is_learning", False)
+print(f"Learning status: {learning_status}")
