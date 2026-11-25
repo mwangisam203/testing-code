@@ -46,3 +46,5 @@ print(f"Argument count: {len(sys.argv)}")
 print(f"Script path: {sys.argv[0]}")
 
 print(f"Test loud mode: {get_mode(['--loud'])}")
+
+print(f"Uppercase greeting name: {name.upper()}")
