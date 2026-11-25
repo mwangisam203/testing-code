@@ -33,3 +33,6 @@ print(f"Reversed numbers: {reversed_numbers}")
 
 short_numbers = [number for number in numbers if number < 4]
 print(f"Numbers under four: {short_numbers}")
+
+even_count = len([number for number in numbers if number % 2 == 0])
+print(f"Even number count: {even_count}")
