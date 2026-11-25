@@ -50,3 +50,6 @@ print(f"Uppercase lookup: {uppercase_lookup}")
 
 lowercase_lookup = {name.lower(): name for name in students}
 print(f"Lowercase name lookup: {lowercase_lookup}")
+
+pass_count = list(score_labels.values()).count("pass")
+print(f"Passing label count: {pass_count}")
