@@ -37,3 +37,5 @@ for filename in files:
 # If you cannot explain a file's job in one sentence, it may be doing too much.
 
 print(describe_file_role("data_loader.py"))
+
+print(describe_file_role("notes.txt"))
