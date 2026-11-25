@@ -58,3 +58,6 @@ print(f"Clean message characters: {character_count}")
 
 space_count = message.count(" ")
 print(f"Spaces in original message: {space_count}")
+
+first_character = clean_message[0]
+print(f"First cleaned character: {first_character}")
