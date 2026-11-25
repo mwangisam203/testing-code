@@ -77,3 +77,6 @@ print(f"Middle items: {middle_items}")
 
 first_name, last_name = ("Maya", "Chen")
 print(f"Name parts: {first_name} / {last_name}")
+
+overridden_theme = settings["theme"]
+print(f"Selected theme: {overridden_theme}")
