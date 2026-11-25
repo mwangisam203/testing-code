@@ -40,3 +40,6 @@ print(f"Names in reverse order: {names_reverse}")
 
 score_spread = max(score for name, score in students) - min(score for name, score in students)
 print(f"Score spread: {score_spread}")
+
+top_two_students = ranked_students[:2]
+print(f"Top two students: {top_two_students}")
