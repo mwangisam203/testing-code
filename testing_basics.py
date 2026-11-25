@@ -47,3 +47,6 @@ print("String cleaning test passed.")
 
 assert "python".upper() == "PYTHON"
 print("Uppercase test passed.")
+
+assert len(["red", "blue"]) == 2
+print("List length check passed.")
