@@ -81,3 +81,6 @@ print(f"Lowest score so far: {min(scores)}")
 
 score_total = sum(student["scores"])
 print(f"Student score total: {score_total}")
+
+high_score_count = sum(score >= 90 for score in scores)
+print(f"Scores of 90 or higher: {high_score_count}")
