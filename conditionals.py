@@ -103,3 +103,5 @@ print(f"No ticket result: {can_enter_event(20, False)}")
 print(f"Top grade example: {letter_grade(95)}")
 
 print(f"Free shipping example: ${shipping_cost(120)}")
+
+print(f"Shipping for $40: ${shipping_cost(40)}")
