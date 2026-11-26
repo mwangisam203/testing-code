@@ -88,3 +88,5 @@ print(f"Flattened score rows: {len(rows)}")
 
 first_row_subject = rows[0]["subject"]
 print(f"First flattened subject: {first_row_subject}")
+
+print(f"Math scores recorded: {len(math_scores)}")
