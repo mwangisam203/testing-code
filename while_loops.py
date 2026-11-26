@@ -49,3 +49,5 @@ while current_number <= 3:
     counted_total += current_number
     current_number += 1
 print(f"Counted total: {counted_total}")
+
+print(f"Three step total: {sum(range(1, 4))}")
