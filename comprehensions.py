@@ -36,3 +36,6 @@ print(f"Numbers under four: {short_numbers}")
 
 even_count = len([number for number in numbers if number % 2 == 0])
 print(f"Even number count: {even_count}")
+
+large_numbers = [number for number in numbers if number >= 5]
+print(f"Numbers at least five: {large_numbers}")
