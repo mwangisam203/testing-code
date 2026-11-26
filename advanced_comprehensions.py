@@ -53,3 +53,6 @@ print(f"Lowercase name lookup: {lowercase_lookup}")
 
 pass_count = list(score_labels.values()).count("pass")
 print(f"Passing label count: {pass_count}")
+
+failing_scores = [score for score in scores if score < 70]
+print(f"Scores below passing: {failing_scores}")
