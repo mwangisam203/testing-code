@@ -79,3 +79,6 @@ print(f"Half of 10: {half(10)}")
 print(f"Triple 4: {triple(4)}")
 
 print(f"Double 8: {double(8)}")
+
+times_five = make_multiplier(5)
+print(f"Five times 6: {times_five(6)}")
