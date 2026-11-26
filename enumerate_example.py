@@ -26,3 +26,6 @@ print(f"First task: {tasks[0]}")
 
 numbered_tasks = list(enumerate(tasks, start=1))
 print(f"Numbered task pairs: {numbered_tasks}")
+
+last_task = tasks[-1]
+print(f"Last task: {last_task}")
