@@ -84,3 +84,6 @@ print(f"Student score total: {score_total}")
 
 high_score_count = sum(score >= 90 for score in scores)
 print(f"Scores of 90 or higher: {high_score_count}")
+
+average_score = sum(scores) / len(scores)
+print(f"Average stored score: {average_score:.1f}")
