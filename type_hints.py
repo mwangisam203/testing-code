@@ -59,3 +59,5 @@ print(f"Average score: {average([80, 90, 100]):.1f}")
 print(f"Zero price: {format_price(0)}")
 
 print(f"Whole dollar amount: {format_price(100)}")
+
+print(f"Square room area: {calculate_area(5, 5)}")
