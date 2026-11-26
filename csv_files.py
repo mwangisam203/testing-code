@@ -110,3 +110,6 @@ print(f"CSV scores analyzed: {len(loaded_students)}")
 
 top_student_name = highest_score["name"]
 print(f"Top student name: {top_student_name}")
+
+score_values = [row["score"] for row in loaded_students]
+print(f"CSV score values: {score_values}")
