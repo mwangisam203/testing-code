@@ -39,3 +39,5 @@ for filename in files:
 print(describe_file_role("data_loader.py"))
 
 print(describe_file_role("notes.txt"))
+
+print(describe_file_role("test_scores.py"))
