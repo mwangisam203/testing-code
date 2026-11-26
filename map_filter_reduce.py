@@ -65,3 +65,6 @@ print(f"Total of small prices: {sum(small_prices):.2f}")
 
 has_price_over_twenty = any(price > 20 for price in prices)
 print(f"Any price over twenty? {has_price_over_twenty}")
+
+has_expensive_item = any(price > 15 for price in prices)
+print(f"Any item over fifteen? {has_expensive_item}")
