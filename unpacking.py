@@ -80,3 +80,6 @@ print(f"Name parts: {first_name} / {last_name}")
 
 overridden_theme = settings["theme"]
 print(f"Selected theme: {overridden_theme}")
+
+active_setting = settings.get("notifications", False)
+print(f"Notifications enabled? {active_setting}")
