@@ -76,3 +76,5 @@ print(f"One item total: ${calculate_total(9.99, 1):.2f}")
 print(f"Two discounted items: ${calculate_total(4.5, 2, discount=0.1):.2f}")
 
 print(f"Passes an 80 point cutoff? {is_passing(75, passing_score=80)}")
+
+print(f"Passing at the boundary? {is_passing(70)}")
