@@ -42,3 +42,5 @@ print(f"Saved note lines: {line_count}")
 
 has_saved_lines = line_count > 0
 print(f"Notes contain lines? {has_saved_lines}")
+
+print(f"Note line count as text: {str(line_count)}")
