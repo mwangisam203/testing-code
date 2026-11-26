@@ -39,3 +39,6 @@ print(f"Largest countdown value: {max(countdown(4))}")
 
 first_even = next((number for number in range(10) if number % 2 == 0), None)
 print(f"First even number: {first_even}")
+
+remaining_counts = list(countdown(2))
+print(f"Remaining counts: {remaining_counts}")
