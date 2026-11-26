@@ -43,3 +43,6 @@ print(f"Score spread: {score_spread}")
 
 top_two_students = ranked_students[:2]
 print(f"Top two students: {top_two_students}")
+
+ranked_names = [name for name, score in ranked_students]
+print(f"Ranked names: {ranked_names}")
