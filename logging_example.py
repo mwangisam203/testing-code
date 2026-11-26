@@ -50,3 +50,5 @@ logging.info("Example values have been counted")
 logging.info("Finished the small calculation example")
 
 logging.info("Finished reviewing the example values")
+
+logging.info("Example list processing is complete")
