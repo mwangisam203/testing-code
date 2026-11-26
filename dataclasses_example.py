@@ -48,3 +48,6 @@ print(f"Course title: {course.title}")
 
 new_student = Student("Leo", 78)
 print(f"New student passing? {new_student.is_passing()}")
+
+borderline_student = Student("Ari", 69)
+print(f"Borderline student passing? {borderline_student.is_passing()}")
