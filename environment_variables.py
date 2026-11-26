@@ -31,3 +31,5 @@ print(f"Database URL: {get_database_url()}")
 print(f"Has debug setting? {'DEBUG' in os.environ}")
 
 print(f"Display app mode: {app_mode.capitalize()}")
+
+print(f"Database setting available? {bool(get_database_url())}")
