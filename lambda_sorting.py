@@ -59,3 +59,6 @@ print(f"Largest task duration: {largest_task['minutes']} minutes")
 
 tasks_by_title_length = sorted(tasks, key=lambda task: len(task["title"]))
 print(f"Shortest title: {tasks_by_title_length[0]['title']}")
+
+longest_title_first = sorted(tasks, key=lambda task: len(task["title"]), reverse=True)
+print(f"Longest task title: {longest_title_first[0]['title']}")
