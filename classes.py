@@ -113,3 +113,6 @@ print(f"Checking can cover $30? {checking.get_balance() >= 30}")
 print(f"Account balance is positive? {account.get_balance() > 0}")
 
 print(f"Number of accounts: {len(accounts)}")
+
+can_withdraw_ten = account.get_balance() >= 10
+print(f"Can account cover ten dollars? {can_withdraw_ten}")
