@@ -50,3 +50,6 @@ print("Uppercase test passed.")
 
 assert len(["red", "blue"]) == 2
 print("List length check passed.")
+
+assert "python".startswith("py")
+print("Prefix check passed.")
