@@ -55,3 +55,5 @@ print("DEBUG: saved amount is nonnegative")
 
 assert discount >= 0, "Discount rate should not be negative."
 print("DEBUG: discount rate check passed")
+
+print(f"DEBUG discount rate: {discount:.0%}")
