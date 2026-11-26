@@ -61,3 +61,6 @@ print(f"Spaces in original message: {space_count}")
 
 first_character = clean_message[0]
 print(f"First cleaned character: {first_character}")
+
+contains_python = "Python" in clean_message
+print(f"Message mentions Python? {contains_python}")
