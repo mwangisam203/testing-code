@@ -52,3 +52,5 @@ logging.info("Finished the small calculation example")
 logging.info("Finished reviewing the example values")
 
 logging.info("Example list processing is complete")
+
+logging.info("Profile example has been prepared")
