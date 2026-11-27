@@ -107,3 +107,5 @@ print(f"Free shipping example: ${shipping_cost(120)}")
 print(f"Shipping for $40: ${shipping_cost(40)}")
 
 print(f"Shipping for a small order: ${shipping_cost(25)}")
+
+print(f"Grade for 83: {letter_grade(83)}")
