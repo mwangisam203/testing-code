@@ -32,3 +32,6 @@ print(f"Score gaps: {score_gaps}")
 
 last_score_pair = list(zip(names, scores))[-1]
 print(f"Last name and score: {last_score_pair}")
+
+paired_names = [name for name, score in zip(names, scores)]
+print(f"Names from score pairs: {paired_names}")
