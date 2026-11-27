@@ -37,3 +37,5 @@ print(f"Last unique color alphabetically: {max(unique_colors)}")
 
 new_colors = {"blue", "pink"} - unique_colors
 print(f"Colors not already listed: {new_colors}")
+
+print(f"Number of unique colors: {len(unique_colors)}")
