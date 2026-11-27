@@ -57,3 +57,6 @@ assert discount >= 0, "Discount rate should not be negative."
 print("DEBUG: discount rate check passed")
 
 print(f"DEBUG discount rate: {discount:.0%}")
+
+assert total_after_discount <= total, "Discounted total should not increase."
+print("DEBUG: total comparison passed")
