@@ -64,3 +64,6 @@ print(f"First cleaned character: {first_character}")
 
 contains_python = "Python" in clean_message
 print(f"Message mentions Python? {contains_python}")
+
+email_domain = clean_email.split("@")[-1]
+print(f"Email domain: {email_domain}")
