@@ -62,3 +62,6 @@ print(f"Shortest title: {tasks_by_title_length[0]['title']}")
 
 longest_title_first = sorted(tasks, key=lambda task: len(task["title"]), reverse=True)
 print(f"Longest task title: {longest_title_first[0]['title']}")
+
+tasks_by_title = sorted(tasks, key=lambda task: task["title"].lower())
+print(f"First title alphabetically: {tasks_by_title[0]['title']}")
