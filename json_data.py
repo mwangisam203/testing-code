@@ -68,3 +68,6 @@ print(f"Learning status: {learning_status}")
 
 skill_flags = {skill: True for skill in loaded_profile["skills"]}
 print(f"Skill flags: {skill_flags}")
+
+skill_total = len(loaded_profile.get("skills", []))
+print(f"Skills in profile: {skill_total}")
