@@ -116,3 +116,5 @@ print(f"Number of accounts: {len(accounts)}")
 
 can_withdraw_ten = account.get_balance() >= 10
 print(f"Can account cover ten dollars? {can_withdraw_ten}")
+
+print(f"Savings account owner: {savings.owner}")
