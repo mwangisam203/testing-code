@@ -69,3 +69,5 @@ print(f"Parsed negative number: {parse_integer('-7')}")
 print(f"Parsed year: {parse_integer('2026')}")
 
 print(f"Parsed decimal input: {parse_integer('3.14')}")
+
+print(f"Parsed spaced number: {parse_integer(' 12 ')}")
