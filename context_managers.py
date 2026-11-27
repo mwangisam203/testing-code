@@ -30,3 +30,5 @@ print(f"First line preview length: {len(first_line[:40])}")
 print(f"Resource label: {resource_name.title()}")
 
 print(f"Uppercase first line: {first_line.upper()}")
+
+print(f"First line starts with a quote? {first_line.startswith(chr(34))}")
