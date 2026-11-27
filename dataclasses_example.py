@@ -51,3 +51,5 @@ print(f"New student passing? {new_student.is_passing()}")
 
 borderline_student = Student("Ari", 69)
 print(f"Borderline student passing? {borderline_student.is_passing()}")
+
+print(f"Ari passes? {Student('Ari', 69).is_passing()}")
