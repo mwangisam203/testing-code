@@ -82,3 +82,5 @@ print(f"Double 8: {double(8)}")
 
 times_five = make_multiplier(5)
 print(f"Five times 6: {times_five(6)}")
+
+print(f"Counter value: {counter()}")
