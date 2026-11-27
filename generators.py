@@ -42,3 +42,6 @@ print(f"First even number: {first_even}")
 
 remaining_counts = list(countdown(2))
 print(f"Remaining counts: {remaining_counts}")
+
+first_three_counts = list(countdown(3))
+print(f"First three counts: {first_three_counts}")
