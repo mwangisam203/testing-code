@@ -61,3 +61,5 @@ print(f"Zero price: {format_price(0)}")
 print(f"Whole dollar amount: {format_price(100)}")
 
 print(f"Square room area: {calculate_area(5, 5)}")
+
+print(f"Small formatted amount: {format_price(1.2)}")
