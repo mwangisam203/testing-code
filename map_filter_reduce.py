@@ -68,3 +68,6 @@ print(f"Any price over twenty? {has_price_over_twenty}")
 
 has_expensive_item = any(price > 15 for price in prices)
 print(f"Any item over fifteen? {has_expensive_item}")
+
+discounted_prices = [round(price * 0.9, 2) for price in prices]
+print(f"Prices after ten percent off: {discounted_prices}")
