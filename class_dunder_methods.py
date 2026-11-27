@@ -45,3 +45,5 @@ print(f"Different books match? {book == different_book}")
 print(f"Book display title: {book.title.upper()}")
 
 print(f"Different book title: {different_book.title}")
+
+print(f"Book as text: {str(book)}")
