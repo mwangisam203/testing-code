@@ -39,3 +39,6 @@ print(f"Even number count: {even_count}")
 
 large_numbers = [number for number in numbers if number >= 5]
 print(f"Numbers at least five: {large_numbers}")
+
+cubes = [number ** 3 for number in numbers]
+print(f"Number cubes: {cubes}")
