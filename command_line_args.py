@@ -50,3 +50,5 @@ print(f"Test loud mode: {get_mode(['--loud'])}")
 print(f"Uppercase greeting name: {name.upper()}")
 
 print(f"Mode from loud flag: {get_mode(['--loud'])}")
+
+print(f"Loud flag result: {get_mode(['program.py', '--loud'])}")
