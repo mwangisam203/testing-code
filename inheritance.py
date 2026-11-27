@@ -30,3 +30,5 @@ print(f"Dog response: {pet.speak()}")
 print(f"Pet is a dog? {isinstance(pet, Dog)}")
 
 print(f"Dog sound ends with punctuation? {pet.speak().endswith('!')}")
+
+print(f"Dog sound length: {len(pet.speak())}")
