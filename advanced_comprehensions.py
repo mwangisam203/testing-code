@@ -56,3 +56,6 @@ print(f"Passing label count: {pass_count}")
 
 failing_scores = [score for score in scores if score < 70]
 print(f"Scores below passing: {failing_scores}")
+
+uppercase_labels = {score: label.upper() for score, label in score_labels.items()}
+print(f"Uppercase labels: {uppercase_labels}")
