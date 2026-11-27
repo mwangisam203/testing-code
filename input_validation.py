@@ -72,3 +72,5 @@ print(f"Clean username valid? {is_valid_username(normalized_username)}")
 print(f"Simple username valid? {is_valid_username('ari')}")
 
 print(f"Username with spaces valid? {is_valid_username('two words')}")
+
+print(f"Six character input long enough? {has_minimum_length('python', 6)}")
