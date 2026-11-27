@@ -46,3 +46,6 @@ print(f"Top two students: {top_two_students}")
 
 ranked_names = [name for name, score in ranked_students]
 print(f"Ranked names: {ranked_names}")
+
+reverse_student_order = sorted(students, reverse=True)
+print(f"Reverse tuple order: {reverse_student_order}")
