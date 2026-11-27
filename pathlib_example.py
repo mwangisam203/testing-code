@@ -53,3 +53,6 @@ print(f"Notes file name: {notes_file.name}")
 print(f"Notes path is a file? {notes_file.is_file()}")
 
 print(f"Project Python file count: {len(python_files)}")
+
+if python_files:
+    print(f"First Python file: {python_files[0].name}")
