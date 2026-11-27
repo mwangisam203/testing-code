@@ -87,3 +87,6 @@ print(f"Scores of 90 or higher: {high_score_count}")
 
 average_score = sum(scores) / len(scores)
 print(f"Average stored score: {average_score:.1f}")
+
+passing_scores_list = [score for score in scores if score >= 70]
+print(f"Passing scores: {passing_scores_list}")
