@@ -83,3 +83,7 @@ print(f"Selected theme: {overridden_theme}")
 
 active_setting = settings.get("notifications", False)
 print(f"Notifications enabled? {active_setting}")
+
+setting_names, setting_values = list(settings.keys()), list(settings.values())
+print(f"Setting names: {setting_names}")
+print(f"Setting values: {setting_values}")
